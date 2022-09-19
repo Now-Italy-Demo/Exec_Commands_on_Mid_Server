@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-17 08:26:22</sys_created_on>
+        <sys_id>0aaba7a897c25d90b66fbd8c1253aff8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>u_mid_server_command_execution.u_mid_server_command_execution_user</sys_name>
+        <sys_package display_value="Global" source="global">global</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
+        <sys_security_acl display_value="u_mid_server_command_execution">c2aba7a897c25d90b66fbd8c1253aff4</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_0aaba7a897c25d90b66fbd8c1253aff8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-19 12:42:52</sys_updated_on>
+        <sys_user_role display_value="u_mid_server_command_execution_user" name="u_mid_server_command_execution_user">b5abe3ac97825d90b66fbd8c1253afb9</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</claim_owner_scope>
+        <claim_timestamp>18355c5d6a90000001</claim_timestamp>
+        <metadata_update_name>sys_security_acl_role_0aaba7a897c25d90b66fbd8c1253aff8</metadata_update_name>
+        <previous_claim_app_version>1.0.0</previous_claim_app_version>
+        <previous_claim_name>Execute Commands on Mid Server</previous_claim_name>
+        <previous_claim_scope>59493655970a51d0b66fbd8c1253afba</previous_claim_scope>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-19 12:42:52</sys_created_on>
+        <sys_id>4f893e55970a51d0b66fbd8c1253af66</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-19 12:42:52</sys_updated_on>
+    </sys_claim>
+</record_update>

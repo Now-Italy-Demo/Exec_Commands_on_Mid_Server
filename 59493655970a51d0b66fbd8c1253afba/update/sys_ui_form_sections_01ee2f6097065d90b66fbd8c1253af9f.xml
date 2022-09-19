@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="01ee2f6097065d90b66fbd8c1253af9f" sys_domain="global" table="u_mid_server_command_execution" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-09-17 08:40:29</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>09ee2f6097065d90b66fbd8c1253afae</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="u_mid_server_command_execution" name="u_mid_server_command_execution" sys_domain="global" view="Default view">01ee2f6097065d90b66fbd8c1253af9f</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="u_mid_server_command_execution" sys_domain="global" view="Default view">159eab6c97c25d90b66fbd8c1253af55</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-09-17 08:40:29</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-09-17 08:40:29</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>05ee2f6097065d90b66fbd8c1253afaf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="u_mid_server_command_execution" name="u_mid_server_command_execution" sys_domain="global" view="Default view">01ee2f6097065d90b66fbd8c1253af9f</sys_ui_form>
+            <sys_ui_section caption="Executions" display_value="Executions" name="u_mid_server_command_execution" sys_domain="global" view="Default view">01ee2f6097065d90b66fbd8c1253af9e</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-09-17 08:40:29</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>u_mid_server_command_execution</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-09-17 08:40:29</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>01ee2f6097065d90b66fbd8c1253af9f</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_name>u_mid_server_command_execution</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Global" source="global">global</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
+            <sys_update_name>sys_ui_form_sections_01ee2f6097065d90b66fbd8c1253af9f</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-09-19 12:42:49</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</claim_owner_scope>
+        <claim_timestamp>18355c5ca210000001</claim_timestamp>
+        <metadata_update_name>sys_ui_form_sections_01ee2f6097065d90b66fbd8c1253af9f</metadata_update_name>
+        <previous_claim_app_version>1.0.0</previous_claim_app_version>
+        <previous_claim_name>Execute Commands on Mid Server</previous_claim_name>
+        <previous_claim_scope>59493655970a51d0b66fbd8c1253afba</previous_claim_scope>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-19 12:42:49</sys_created_on>
+        <sys_id>9a89fa55970a51d0b66fbd8c1253af6e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-19 12:42:49</sys_updated_on>
+    </sys_claim>
+</record_update>

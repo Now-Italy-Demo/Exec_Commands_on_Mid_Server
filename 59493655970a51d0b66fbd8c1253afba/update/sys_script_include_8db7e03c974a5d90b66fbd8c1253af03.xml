@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>global.Mid_Cmd_Exec</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>Runs a command via Flow Action "global.run_command_on_mid". This script is invoked from UI Actions of table "u_mid_server_command_execution".</description>
+        <name>Mid_Cmd_Exec</name>
+        <script><![CDATA[var Mid_Cmd_Exec = Class.create();
+Mid_Cmd_Exec.prototype = {
+    initialize: function() {
+    },
+	
+	run: function( gr_id, cmd ) {
+		try {
+			var gr = new GlideRecord('u_mid_server_command_execution');
+			gr.get(gr_id);
+
+			var mid_gr = new GlideRecord('ecc_agent');
+			mid_gr.get(gr.u_mid_server.sys_id);
+			
+			var mid_os = mid_gr.getValue('host_type');
+			
+			var inputs = {};
+			
+			if ( mid_os == 'Windows') {
+				inputs['command'] = 'echo [%USERNAME%@%COMPUTERNAME%] ' + cmd + ' & ' + cmd;
+				
+			} 
+			else if ( mid_os == 'Linux') {
+				inputs['command'] = 'echo "[$USER@$(hostname)] ' + cmd + '"; ' + cmd;
+			} 
+			else {
+				inputs['command'] = cmd;
+			}
+
+			inputs['mid_server'] = mid_gr;
+
+			var outputs = sn_fd.FlowAPI.executeActionQuick('global.run_command_on_mid', inputs);
+
+			gr.u_command = '';
+			if( outputs['ecc_command_sysid'] == '' ) 
+				gr.u_output.setJournalEntry('[code]<pre>[/code]' + outputs['stdout'] + '[code]<br><font color="red">[/code]' + outputs['stderr'] + '[code]</font></pre>[/code]');
+			else
+				gr.u_output.setJournalEntry('[code]<pre><font color="red">[/code] Async execution.[code]</font>[/code] ECC Command Sys_ID: ' + outputs['ecc_command_sysid'] + '[code]</pre>[/code]');
+
+			gr.u_last_execution = outputs['result'];
+			gr.u_host_os = mid_os;
+			gr.update();
+			return 'OK';
+		}
+		catch(err) {
+			return err.message;
+		}
+	},
+
+    type: 'Mid_Cmd_Exec'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-17 12:55:34</sys_created_on>
+        <sys_id>8db7e03c974a5d90b66fbd8c1253af03</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>Mid_Cmd_Exec</sys_name>
+        <sys_package display_value="Global" source="global">global</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
+        <sys_update_name>sys_script_include_8db7e03c974a5d90b66fbd8c1253af03</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-19 12:42:53</sys_updated_on>
+    </sys_script_include>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</claim_owner_scope>
+        <claim_timestamp>18355c5d8cb0000001</claim_timestamp>
+        <metadata_update_name>sys_script_include_8db7e03c974a5d90b66fbd8c1253af03</metadata_update_name>
+        <previous_claim_app_version>1.0.0</previous_claim_app_version>
+        <previous_claim_name>Execute Commands on Mid Server</previous_claim_name>
+        <previous_claim_scope>59493655970a51d0b66fbd8c1253afba</previous_claim_scope>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-19 12:42:53</sys_created_on>
+        <sys_id>43893e55970a51d0b66fbd8c1253afa0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-19 12:42:53</sys_updated_on>
+    </sys_claim>
+</record_update>
