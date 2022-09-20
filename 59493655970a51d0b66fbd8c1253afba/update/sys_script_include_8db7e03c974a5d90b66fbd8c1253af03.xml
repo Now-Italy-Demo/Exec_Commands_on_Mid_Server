@@ -12,13 +12,16 @@ Mid_Cmd_Exec.prototype = {
     initialize: function() {
     },
 	
-	run: function( gr_id, cmd ) {
+	run: function( gr_id, cmd, timeout ) {
 		try {
 			var gr = new GlideRecord('u_mid_server_command_execution');
 			gr.get(gr_id);
 
 			var mid_gr = new GlideRecord('ecc_agent');
 			mid_gr.get(gr.u_mid_server.sys_id);
+			
+			if( mid_gr.getValue('status') == 'Down')
+				return 'Mid Server ' + mid_gr.getValue('name') + ' is currently down';
 			
 			var mid_os = mid_gr.getValue('host_type');
 			
@@ -29,17 +32,32 @@ Mid_Cmd_Exec.prototype = {
 				
 			} 
 			else if ( mid_os == 'Linux') {
-				inputs['command'] = 'echo "[$USER@$(hostname)] ' + cmd + '"; ' + cmd;
+				if( timeout > 0 ) {
+					inputs['command'] = 'echo "[$USER@$(hostname)] ' + cmd.replace(/"/g, '\\"') + '"; timeout -k 1 ' + timeout + ' sh -c "' + cmd.replace(/"/g, '\\"') + '"; if [ $? -eq 124 ]; then echo "Command killed. Reached timeout of ' + timeout + ' seconds." >> /dev/stderr; fi';
+					inputs['execution_timeout'] = timeout + 10;
+				}
+				else {
+					inputs['run_asynchronously'] = true;
+					inputs['command'] = 'echo "[$USER@$(hostname)] ' + cmd.replace(/"/g, '\\"') + '"; ' + cmd;
+				}
+				
 			} 
 			else {
 				inputs['command'] = cmd;
 			}
 
 			inputs['mid_server'] = mid_gr;
+			
+			var flow_api_timeout = 0;
+			if( timeout > 15 )
+				flow_api_timeout = (timeout+15)*1000;
+			else
+				flow_api_timeout = 30000;
 
-			var outputs = sn_fd.FlowAPI.executeActionQuick('global.run_command_on_mid', inputs);
+			var outputs = sn_fd.FlowAPI.executeActionQuick('global.run_command_on_mid', inputs, flow_api_timeout );
 
 			gr.u_command = '';
+			gr.u_exec_timeout = timeout;
 			if( outputs['ecc_command_sysid'] == '' ) 
 				gr.u_output.setJournalEntry('[code]<pre>[/code]' + outputs['stdout'] + '[code]<br><font color="red">[/code]' + outputs['stderr'] + '[code]</font></pre>[/code]');
 			else
@@ -61,14 +79,14 @@ Mid_Cmd_Exec.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-09-17 12:55:34</sys_created_on>
         <sys_id>8db7e03c974a5d90b66fbd8c1253af03</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>36</sys_mod_count>
         <sys_name>Mid_Cmd_Exec</sys_name>
         <sys_package display_value="Global" source="global">global</sys_package>
         <sys_policy/>
         <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
         <sys_update_name>sys_script_include_8db7e03c974a5d90b66fbd8c1253af03</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-09-19 12:42:53</sys_updated_on>
+        <sys_updated_on>2022-09-20 17:40:22</sys_updated_on>
     </sys_script_include>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</claim_owner_scope>

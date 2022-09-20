@@ -35,7 +35,9 @@ action.setRedirectURL(current);
 
 if ( current.u_command != '' ) {
 	var cmd_exec = new Mid_Cmd_Exec();
-	var rc = cmd_exec.run( current.sys_id, current.u_command );
+	var timeout = current.u_exec_timeout;
+	if( isNaN(timeout) || timeout < 0 ) timeout = 15;
+	var rc = cmd_exec.run( current.sys_id, current.u_command, timeout );
 	if ( rc != 'OK' )
 		gs.addErrorMessage('Execution error: ' + rc );
 }
@@ -54,7 +56,7 @@ action.setRedirectURL(current);]]></script>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>bf636838974a5d90b66fbd8c1253af51</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name>Run</sys_name>
         <sys_overrides display_value="Submit">42da42d00a0a0b340066377beb6dd099</sys_overrides>
         <sys_package display_value="Global" source="global">global</sys_package>
@@ -62,7 +64,7 @@ action.setRedirectURL(current);]]></script>
         <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
         <sys_update_name>sys_ui_action_bf636838974a5d90b66fbd8c1253af51</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-09-19 12:42:53</sys_updated_on>
+        <sys_updated_on>2022-09-20 15:43:00</sys_updated_on>
         <table>u_mid_server_command_execution</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

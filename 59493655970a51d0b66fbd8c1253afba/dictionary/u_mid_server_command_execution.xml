@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element label="Mid Server Command Execution" max_length="40" name="u_mid_server_command_execution" sizeclass="3" type="collection">
         <element label="Command" max_length="1024" name="u_command" type="string"/>
-        <element default="60" hint="Sets the execution timeout in seconds. If timeout is reached, process is killed. If timeout is set to 0 and response does not come in 15 seconds process continues in background." label="Exec_Timeout" max_length="40" name="u_exec_timeout" type="integer"/>
+        <element default="30" hint="Sets the execution timeout in seconds. If timeout is reached, process is killed. If timeout is set to 0 process is executed in background." label="Exec_Timeout" max_length="40" name="u_exec_timeout" type="integer"/>
         <element label="Host OS" max_length="25" name="u_host_os" read_only="true" type="string"/>
         <element label="Last Execution Status" max_length="255" name="u_last_execution" read_only="true" type="string"/>
         <element display="true" label="Mid Server" mandatory="true" max_length="32" name="u_mid_server" reference="ecc_agent" type="reference"/>

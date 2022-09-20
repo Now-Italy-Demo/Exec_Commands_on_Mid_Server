@@ -13,7 +13,7 @@
         <description>Runs a shell command on a specified Mid Server via ECC Queue. </description>
         <ih_action>false</ih_action>
         <internal_name>run_command_on_mid</internal_name>
-        <label_cache>[{"name":"{{action.variable}}","label":"action➛variable","type":"action","ref":"ecc_agent","reference_display":"MID Server","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.mid_server}}","label":"action➛Mid Server","type":"action","ref":"ecc_agent","reference_display":"MID Server","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.command}}","label":"action➛Command","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.mid_server.name}}","label":"action➛Mid Server➛Name","type":"action","ref":"","reference_display":"Name","base_type":"string","parent_table_name":"ecc_agent","column_name":"name","choices":null,"attributes":{}},{"name":"{{action.local_table}}","label":"action➛Local Table","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action._}}","label":"action➛","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.number_id}}","label":"action➛Number / ID","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.remote_table}}","label":"action➛Remote Table","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.local_record}}","label":"action➛Local Record","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.remote_fields}}","label":"action➛Fields","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.run_asyngrounously}}","label":"action➛Run asyngrounously","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.run_asynchronously}}","label":"action➛Run asynchronously","type":"action","ref":"","reference_display":"","base_type":"boolean","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[55cba50a-d430-4556-8bbb-1e6ffe539c85].variable}}","label":"step➛Script step➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[55cba50a-d430-4556-8bbb-1e6ffe539c85].result}}","label":"step➛Script step➛result","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","uiTypeLabel":"JSON","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceUiUniqueId":"","sourceType":"","uiType":"json","uiUniqueId":"0895720d-b3ad-4a4c-bb6d-e142cd3dff3e"}},{"name":"{{step[0374290c-2261-4578-ab76-4bae53f648a1].variable}}","label":"step➛Pre Processing➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[0374290c-2261-4578-ab76-4bae53f648a1].variable1}}","label":"step➛Pre Processing➛variable1","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[0374290c-2261-4578-ab76-4bae53f648a1].variable2}}","label":"step➛Pre Processing➛variable2","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[0374290c-2261-4578-ab76-4bae53f648a1].remoteinstance}}","label":"step➛Pre Processing➛RemoteInstance","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[0374290c-2261-4578-ab76-4bae53f648a1].requestbody}}","label":"step➛Pre Processing➛RequestBody","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[0374290c-2261-4578-ab76-4bae53f648a1].remotetable}}","label":"step➛Pre Processing➛RemoteTable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[c054c2d9-3360-4a91-9e4b-2798a2607dfe].response_body}}","label":"step➛Create Remote Record➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[c054c2d9-3360-4a91-9e4b-2798a2607dfe].status_code}}","label":"step➛Create Remote Record➛Status Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[0374290c-2261-4578-ab76-4bae53f648a1].payload}}","label":"step➛Pre Processing➛Payload","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[796c8e1a-0ce8-446b-a18d-9f8fb58e6755].variable}}","label":"step➛Post processing➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[796c8e1a-0ce8-446b-a18d-9f8fb58e6755].response_body}}","label":"step➛Post processing➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[796c8e1a-0ce8-446b-a18d-9f8fb58e6755].status}}","label":"step➛Post processing➛Status","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[796c8e1a-0ce8-446b-a18d-9f8fb58e6755].error_message}}","label":"step➛Post processing➛Error Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[796c8e1a-0ce8-446b-a18d-9f8fb58e6755].errormessage}}","label":"step➛Post processing➛Error Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[796c8e1a-0ce8-446b-a18d-9f8fb58e6755].responsebody}}","label":"step➛Post processing➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[0374290c-2261-4578-ab76-4bae53f648a1].correlation_id}}","label":"step➛Pre Processing➛Correlation ID","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[2efbcc65-8115-42bc-a702-87ad143f1e90].response_body}}","label":"step➛Get Task Record➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[2efbcc65-8115-42bc-a702-87ad143f1e90].status_code}}","label":"step➛Get Task Record➛Status Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[0374290c-2261-4578-ab76-4bae53f648a1].filter}}","label":"step➛Pre Processing➛Filter","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[796c8e1a-0ce8-446b-a18d-9f8fb58e6755].recordid}}","label":"step➛Post processing➛RecordID","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[796c8e1a-0ce8-446b-a18d-9f8fb58e6755]._}}","label":"step➛Post processing➛","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[796c8e1a-0ce8-446b-a18d-9f8fb58e6755].remoterecord}}","label":"step➛Post processing➛RemoteRecord","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[55cba50a-d430-4556-8bbb-1e6ffe539c85].stdout}}","label":"step➛Script step➛stdout","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[55cba50a-d430-4556-8bbb-1e6ffe539c85].stderr}}","label":"step➛Script step➛stderr","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[55cba50a-d430-4556-8bbb-1e6ffe539c85].ecc_command_sysid}}","label":"step➛Script step➛ecc_command_sysid","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}}]</label_cache>
+        <label_cache>[{"name":"{{action.variable}}","label":"action➛variable","type":"action","ref":"ecc_agent","reference_display":"MID Server","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.mid_server}}","label":"action➛Mid Server","type":"action","ref":"ecc_agent","reference_display":"MID Server","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.command}}","label":"action➛Command","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.mid_server.name}}","label":"action➛Mid Server➛Name","type":"action","ref":"","reference_display":"Name","base_type":"string","parent_table_name":"ecc_agent","column_name":"name","choices":null,"attributes":{}},{"name":"{{action.local_table}}","label":"action➛Local Table","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action._}}","label":"action➛","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.number_id}}","label":"action➛Number / ID","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.remote_table}}","label":"action➛Remote Table","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.local_record}}","label":"action➛Local Record","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.remote_fields}}","label":"action➛Fields","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.run_asyngrounously}}","label":"action➛Run asyngrounously","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.run_asynchronously}}","label":"action➛Run asynchronously","type":"action","ref":"","reference_display":"","base_type":"boolean","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.execution_timeout}}","label":"action➛Execution Timeout","type":"action","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[55cba50a-d430-4556-8bbb-1e6ffe539c85].variable}}","label":"step➛Script step➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[55cba50a-d430-4556-8bbb-1e6ffe539c85].result}}","label":"step➛Script step➛result","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","uiTypeLabel":"JSON","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceUiUniqueId":"","sourceType":"","uiType":"json","uiUniqueId":"0895720d-b3ad-4a4c-bb6d-e142cd3dff3e"}},{"name":"{{step[0374290c-2261-4578-ab76-4bae53f648a1].variable}}","label":"step➛Pre Processing➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[0374290c-2261-4578-ab76-4bae53f648a1].variable1}}","label":"step➛Pre Processing➛variable1","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[0374290c-2261-4578-ab76-4bae53f648a1].variable2}}","label":"step➛Pre Processing➛variable2","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[0374290c-2261-4578-ab76-4bae53f648a1].remoteinstance}}","label":"step➛Pre Processing➛RemoteInstance","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[0374290c-2261-4578-ab76-4bae53f648a1].requestbody}}","label":"step➛Pre Processing➛RequestBody","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[0374290c-2261-4578-ab76-4bae53f648a1].remotetable}}","label":"step➛Pre Processing➛RemoteTable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[c054c2d9-3360-4a91-9e4b-2798a2607dfe].response_body}}","label":"step➛Create Remote Record➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[c054c2d9-3360-4a91-9e4b-2798a2607dfe].status_code}}","label":"step➛Create Remote Record➛Status Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[0374290c-2261-4578-ab76-4bae53f648a1].payload}}","label":"step➛Pre Processing➛Payload","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[796c8e1a-0ce8-446b-a18d-9f8fb58e6755].variable}}","label":"step➛Post processing➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[796c8e1a-0ce8-446b-a18d-9f8fb58e6755].response_body}}","label":"step➛Post processing➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[796c8e1a-0ce8-446b-a18d-9f8fb58e6755].status}}","label":"step➛Post processing➛Status","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[796c8e1a-0ce8-446b-a18d-9f8fb58e6755].error_message}}","label":"step➛Post processing➛Error Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[796c8e1a-0ce8-446b-a18d-9f8fb58e6755].errormessage}}","label":"step➛Post processing➛Error Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[796c8e1a-0ce8-446b-a18d-9f8fb58e6755].responsebody}}","label":"step➛Post processing➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[0374290c-2261-4578-ab76-4bae53f648a1].correlation_id}}","label":"step➛Pre Processing➛Correlation ID","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[2efbcc65-8115-42bc-a702-87ad143f1e90].response_body}}","label":"step➛Get Task Record➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[2efbcc65-8115-42bc-a702-87ad143f1e90].status_code}}","label":"step➛Get Task Record➛Status Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[0374290c-2261-4578-ab76-4bae53f648a1].filter}}","label":"step➛Pre Processing➛Filter","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[796c8e1a-0ce8-446b-a18d-9f8fb58e6755].recordid}}","label":"step➛Post processing➛RecordID","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[796c8e1a-0ce8-446b-a18d-9f8fb58e6755]._}}","label":"step➛Post processing➛","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[796c8e1a-0ce8-446b-a18d-9f8fb58e6755].remoterecord}}","label":"step➛Post processing➛RemoteRecord","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[55cba50a-d430-4556-8bbb-1e6ffe539c85].stdout}}","label":"step➛Script step➛stdout","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[55cba50a-d430-4556-8bbb-1e6ffe539c85].stderr}}","label":"step➛Script step➛stderr","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[55cba50a-d430-4556-8bbb-1e6ffe539c85].ecc_command_sysid}}","label":"step➛Script step➛ecc_command_sysid","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}}]</label_cache>
         <master_snapshot>b90ca31c47ce19903d45b18c346d4300</master_snapshot>
         <name>Run Command on MID</name>
         <natlang/>
@@ -26,7 +26,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>39632250474a19903d45b18c346d4301</sys_id>
-        <sys_mod_count>63</sys_mod_count>
+        <sys_mod_count>85</sys_mod_count>
         <sys_name>Run Command on MID</sys_name>
         <sys_overrides/>
         <sys_package display_value="Global" source="global">global</sys_package>
@@ -34,7 +34,7 @@
         <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_39632250474a19903d45b18c346d4301</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-09-19 12:42:53</sys_updated_on>
+        <sys_updated_on>2022-09-20 17:29:41</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -62,10 +62,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-09-16 08:50:33</sys_created_on>
         <sys_id>e697ead4474a19903d45b18c346d439a</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-09-16 08:52:15</sys_updated_on>
-        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"35688d81-d62e-4b3a-8c6a-bd5b28aa681a\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"2\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
+        <sys_updated_on>2022-09-20 14:05:03</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"35688d81-d62e-4b3a-8c6a-bd5b28aa681a\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"2\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
         <variable display_value="Action Status">a697ead4474a19903d45b18c346d438b</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=39632250474a19903d45b18c346d4301"/>
@@ -173,10 +173,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-09-16 08:50:32</sys_created_on>
         <sys_id>9697e2d0474a19903d45b18c346d4329</sys_id>
-        <sys_mod_count>31</sys_mod_count>
-        <sys_scope display_value="Global">global</sys_scope>
+        <sys_mod_count>38</sys_mod_count>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-09-18 16:52:12</sys_updated_on>
+        <sys_updated_on>2022-09-20 17:29:32</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=9697e2d0474a19903d45b18c346d4329"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -215,14 +215,17 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-09-16 08:50:32</sys_created_on>
         <sys_id>e297ead4474a19903d45b18c346d4382</sys_id>
-        <sys_mod_count>29</sys_mod_count>
+        <sys_mod_count>35</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-09-18 16:52:12</sys_updated_on>
+        <sys_updated_on>2022-09-20 17:29:32</sys_updated_on>
         <value>(function execute(inputs, outputs) {
 
 // Send Command:
 
   var cmd = inputs.command.trim();
+  var exec_timeout = inputs.exec_timeout;
+  
+  if( isNaN(exec_timeout) || exec_timeout &lt;= 0 ) exec_timeout = 15; 
 
   var ecc_queue = new GlideRecord("ecc_queue");
   ecc_queue.initialize();
@@ -238,16 +241,9 @@
     ecc_queue.payload = '&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;parameters&gt;&lt;parameter name="skip_sensor" value="true"/&gt;&lt;/parameters&gt;';
   }
   
-  
-
   //Get SysID of new ECC Queue record
   var ecc_sysid = ecc_queue.insert();
 
-  //Set Response to current record sys_id
-  //ecc_queue.response_to = ecc_sysid;
-
-  //Update new ECC Queue record
-  //ecc_queue.update();
 
   if( inputs.async_run == 'false' ) {
        //Get Response from ECC Queue that was linked to the original Output command in the response_to reference 
@@ -257,7 +253,7 @@
 
          //Get response that matches response to record set in output command sent earlier
 
-         while ( (response_sysid == '-') &amp;&amp; (count &lt; 15500) ) {
+         while ( (response_sysid == '-') &amp;&amp; (count &lt; (exec_timeout * 1000) ) ) {
            ecc_response.addQuery("response_to", ecc_sysid);
            ecc_response.addQuery("queue", "input");
            ecc_response.query();
@@ -272,13 +268,13 @@
          }
 
          if (response_sysid != '-') {
-           	  outputs.result = 'Command terminated in ' + count / 1000 + ' seconds.';
+           	  outputs.result = 'Command terminated in ' + ((count-500)/1000) + ' seconds.';
               var xmldoc = new XMLDocument(ecc_response.payload);
 			  outputs.stdout = xmldoc.getNodeText('//stdout');
               outputs.stderr = xmldoc.getNodeText('//stderr');
          } 
          else {
-              outputs.result = 'Timeout getting response in ' + count / 1000 + ' seconds.';
+              outputs.result = 'Timeout getting response in ' + ((count-500)/1000) + ' seconds.';
               outputs.ecc_command_sysid = ecc_sysid;
          }  
   }
@@ -343,6 +339,18 @@
         <value>{{action.command}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>exec_timeout</field>
+        <id>9697e2d0474a19903d45b18c346d4329</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-20 14:05:02</sys_created_on>
+        <sys_id>64f5d07d974ad1d0b66fbd8c1253af72</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-20 14:05:02</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_9697e2d0474a19903d45b18c346d4329</table>
+        <value>{{action.execution_timeout}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>midserver</field>
         <id>9697e2d0474a19903d45b18c346d4329</id>
         <sys_created_by>admin</sys_created_by>
@@ -368,7 +376,88 @@
     </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_9697e2d0474a19903d45b18c346d4329^id=9697e2d0474a19903d45b18c346d4329"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=9697e2d0474a19903d45b18c346d4329"/>
-    <sys_hub_step_ext_input action="delete_multiple" query="model=9697e2d0474a19903d45b18c346d4329^sys_idNOT IN5a97ead4474a19903d45b18c346d4357,ad46c714470e19903d45b18c346d43ff,b67aa61c474a19903d45b18c346d4325"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=9697e2d0474a19903d45b18c346d4329^sys_idNOT IN58f5d07d974ad1d0b66fbd8c1253af28,5a97ead4474a19903d45b18c346d4357,ad46c714470e19903d45b18c346d43ff,b67aa61c474a19903d45b18c346d4325"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>exec_timeout</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">9697e2d0474a19903d45b18c346d4329</model>
+        <model_id>9697e2d0474a19903d45b18c346d4329</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_9697e2d0474a19903d45b18c346d4329</name>
+        <next_element/>
+        <order>300</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-20 14:05:02</sys_created_on>
+        <sys_id>58f5d07d974ad1d0b66fbd8c1253af28</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-20 14:06:33</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
     <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -431,14 +520,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-09-16 08:50:32</sys_created_on>
         <sys_id>5a97ead4474a19903d45b18c346d4357</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Global">global</sys_scope>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-09-16 08:50:32</sys_updated_on>
+        <sys_updated_on>2022-09-20 14:05:02</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -512,14 +601,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-09-16 11:04:33</sys_created_on>
         <sys_id>ad46c714470e19903d45b18c346d43ff</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Global">global</sys_scope>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-09-16 11:04:33</sys_updated_on>
+        <sys_updated_on>2022-09-20 14:05:02</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -593,14 +682,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-09-16 09:03:07</sys_created_on>
         <sys_id>b67aa61c474a19903d45b18c346d4325</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Global">global</sys_scope>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-09-16 09:03:07</sys_updated_on>
+        <sys_updated_on>2022-09-20 14:05:02</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -675,14 +764,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-09-16 11:22:18</sys_created_on>
         <sys_id>255a4f98470e19903d45b18c346d43a7</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Global">global</sys_scope>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-09-16 11:22:18</sys_updated_on>
+        <sys_updated_on>2022-09-20 14:05:02</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -756,14 +845,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-09-16 09:18:52</sys_created_on>
         <sys_id>651eea50478a19903d45b18c346d439b</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Global">global</sys_scope>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-09-16 09:18:52</sys_updated_on>
+        <sys_updated_on>2022-09-20 14:05:02</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -837,14 +926,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-09-16 11:22:18</sys_created_on>
         <sys_id>ad5a4f98470e19903d45b18c346d43ab</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Global">global</sys_scope>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-09-16 11:22:18</sys_updated_on>
+        <sys_updated_on>2022-09-20 14:05:02</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -918,14 +1007,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-09-16 12:30:45</sys_created_on>
         <sys_id>dc0a1390478e19903d45b18c346d4360</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Global">global</sys_scope>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-09-16 12:30:45</sys_updated_on>
+        <sys_updated_on>2022-09-20 14:05:02</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1031,7 +1120,89 @@
         <url/>
         <url_target/>
     </sys_documentation>
-    <sys_hub_action_input action="delete_multiple" query="model=39632250474a19903d45b18c346d4301^sys_idNOT IN34c36a10474a19903d45b18c346d4317,5546c714470e19903d45b18c346d43ea,f8c36e50474a19903d45b18c346d4387"/>
+    <sys_hub_action_input action="delete_multiple" query="model=39632250474a19903d45b18c346d4301^sys_idNOT IN18f5d07d974ad1d0b66fbd8c1253af02,34c36a10474a19903d45b18c346d4317,5546c714470e19903d45b18c346d43ea,f8c36e50474a19903d45b18c346d4387"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=14ca4d44-64eb-41ca-b7dd-f864da7d1545</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>execution_timeout</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>Execution Timeout</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Run Command on MID">39632250474a19903d45b18c346d4301</model>
+        <model_id>39632250474a19903d45b18c346d4301</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_39632250474a19903d45b18c346d4301</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-20 14:05:02</sys_created_on>
+        <sys_id>18f5d07d974ad1d0b66fbd8c1253af02</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-20 14:05:02</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=18f5d07d974ad1d0b66fbd8c1253af02"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -1094,14 +1265,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-09-16 08:33:46</sys_created_on>
         <sys_id>34c36a10474a19903d45b18c346d4317</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Global">global</sys_scope>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-09-16 08:33:46</sys_updated_on>
+        <sys_updated_on>2022-09-20 14:05:01</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1176,14 +1347,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-09-16 11:04:32</sys_created_on>
         <sys_id>5546c714470e19903d45b18c346d43ea</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Global">global</sys_scope>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-09-16 11:04:32</sys_updated_on>
+        <sys_updated_on>2022-09-20 14:05:01</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1258,14 +1429,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-09-16 08:33:46</sys_created_on>
         <sys_id>f8c36e50474a19903d45b18c346d4387</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Global">global</sys_scope>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-09-16 08:33:46</sys_updated_on>
+        <sys_updated_on>2022-09-20 14:05:01</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1343,14 +1514,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-09-16 08:52:15</sys_created_on>
         <sys_id>23f7e218474a19903d45b18c346d43af</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Global">global</sys_scope>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-09-16 08:52:15</sys_updated_on>
+        <sys_updated_on>2022-09-20 14:05:03</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1428,14 +1599,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-09-16 11:25:29</sys_created_on>
         <sys_id>581b031c470e19903d45b18c346d43d3</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Global">global</sys_scope>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-09-16 11:26:18</sys_updated_on>
+        <sys_updated_on>2022-09-20 14:05:03</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1513,14 +1684,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-09-16 12:34:23</sys_created_on>
         <sys_id>95da17d0478e19903d45b18c346d43bf</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Global">global</sys_scope>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-09-16 12:34:41</sys_updated_on>
+        <sys_updated_on>2022-09-20 14:05:03</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1598,14 +1769,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-09-16 08:50:33</sys_created_on>
         <sys_id>a697ead4474a19903d45b18c346d438b</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Global">global</sys_scope>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-09-16 08:50:33</sys_updated_on>
+        <sys_updated_on>2022-09-20 14:05:03</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1683,14 +1854,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-09-16 08:50:33</sys_created_on>
         <sys_id>a697ead4474a19903d45b18c346d4390</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Global">global</sys_scope>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-09-16 08:50:33</sys_updated_on>
+        <sys_updated_on>2022-09-20 14:05:03</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1768,14 +1939,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-09-16 11:25:29</sys_created_on>
         <sys_id>d01b031c470e19903d45b18c346d43d8</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Global">global</sys_scope>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-09-16 11:26:18</sys_updated_on>
+        <sys_updated_on>2022-09-20 14:05:03</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1801,7 +1972,7 @@
         <sys_updated_on>2022-09-16 08:33:46</sys_updated_on>
     </sys_hub_action_status_metadata>
     <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=f8c36e50474a19903d45b18c346d4396"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_39632250474a19903d45b18c346d4301^sys_idNOT IN1146c714470e19903d45b18c346d43f2,74c36e50474a19903d45b18c346d438b,b8c36e50474a19903d45b18c346d4386"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_39632250474a19903d45b18c346d4301^sys_idNOT IN1146c714470e19903d45b18c346d43f2,14f5d07d974ad1d0b66fbd8c1253af07,74c36e50474a19903d45b18c346d438b,b8c36e50474a19903d45b18c346d4386"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>run_asynchronously</element>
         <help/>
@@ -1822,6 +1993,29 @@
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2022-09-16 11:04:32</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>execution_timeout</element>
+        <help/>
+        <hint/>
+        <label>Execution Timeout</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_39632250474a19903d45b18c346d4301</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-20 14:05:02</sys_created_on>
+        <sys_id>14f5d07d974ad1d0b66fbd8c1253af07</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Execute Commands on Mid Server" source="59493655970a51d0b66fbd8c1253afba">59493655970a51d0b66fbd8c1253afba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-20 14:05:02</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -2016,17 +2210,17 @@
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Run Command on MID">39632250474a19903d45b18c346d4301</action_id>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"a20ce31c47ce19903d45b18c346d435d","name":"plan","plan_signature":null}}</plan>
-        <snapshot>63096649978edd90b66fbd8c1253af17</snapshot>
+        <snapshot>8ec4c5b5978ed1d0b66fbd8c1253af08</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-09-16 13:49:33</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>a20ce31c47ce19903d45b18c346d435d</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-09-18 16:52:21</sys_updated_on>
+        <sys_updated_on>2022-09-20 17:29:43</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -2040,7 +2234,7 @@
         <copied_from_name/>
         <description>Runs a shell command on a specified Mid Server via ECC Queue. </description>
         <internal_name>run_command_on_mid</internal_name>
-        <label_cache>[{"name":"{{action.variable}}","label":"action➛variable","type":"action","ref":"ecc_agent","reference_display":"MID Server","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.mid_server}}","label":"action➛Mid Server","type":"action","ref":"ecc_agent","reference_display":"MID Server","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.command}}","label":"action➛Command","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.mid_server.name}}","label":"action➛Mid Server➛Name","type":"action","ref":"","reference_display":"Name","base_type":"string","parent_table_name":"ecc_agent","column_name":"name","choices":null,"attributes":{}},{"name":"{{action.local_table}}","label":"action➛Local Table","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action._}}","label":"action➛","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.number_id}}","label":"action➛Number / ID","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.remote_table}}","label":"action➛Remote Table","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.local_record}}","label":"action➛Local Record","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.remote_fields}}","label":"action➛Fields","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.run_asyngrounously}}","label":"action➛Run asyngrounously","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.run_asynchronously}}","label":"action➛Run asynchronously","type":"action","ref":"","reference_display":"","base_type":"boolean","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[55cba50a-d430-4556-8bbb-1e6ffe539c85].variable}}","label":"step➛Script step➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[55cba50a-d430-4556-8bbb-1e6ffe539c85].result}}","label":"step➛Script step➛result","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","uiTypeLabel":"JSON","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceUiUniqueId":"","sourceType":"","uiType":"json","uiUniqueId":"0895720d-b3ad-4a4c-bb6d-e142cd3dff3e"}},{"name":"{{step[0374290c-2261-4578-ab76-4bae53f648a1].variable}}","label":"step➛Pre Processing➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[0374290c-2261-4578-ab76-4bae53f648a1].variable1}}","label":"step➛Pre Processing➛variable1","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[0374290c-2261-4578-ab76-4bae53f648a1].variable2}}","label":"step➛Pre Processing➛variable2","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[0374290c-2261-4578-ab76-4bae53f648a1].remoteinstance}}","label":"step➛Pre Processing➛RemoteInstance","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[0374290c-2261-4578-ab76-4bae53f648a1].requestbody}}","label":"step➛Pre Processing➛RequestBody","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[0374290c-2261-4578-ab76-4bae53f648a1].remotetable}}","label":"step➛Pre Processing➛RemoteTable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[c054c2d9-3360-4a91-9e4b-2798a2607dfe].response_body}}","label":"step➛Create Remote Record➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[c054c2d9-3360-4a91-9e4b-2798a2607dfe].status_code}}","label":"step➛Create Remote Record➛Status Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[0374290c-2261-4578-ab76-4bae53f648a1].payload}}","label":"step➛Pre Processing➛Payload","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[796c8e1a-0ce8-446b-a18d-9f8fb58e6755].variable}}","label":"step➛Post processing➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[796c8e1a-0ce8-446b-a18d-9f8fb58e6755].response_body}}","label":"step➛Post processing➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[796c8e1a-0ce8-446b-a18d-9f8fb58e6755].status}}","label":"step➛Post processing➛Status","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[796c8e1a-0ce8-446b-a18d-9f8fb58e6755].error_message}}","label":"step➛Post processing➛Error Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[796c8e1a-0ce8-446b-a18d-9f8fb58e6755].errormessage}}","label":"step➛Post processing➛Error Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[796c8e1a-0ce8-446b-a18d-9f8fb58e6755].responsebody}}","label":"step➛Post processing➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[0374290c-2261-4578-ab76-4bae53f648a1].correlation_id}}","label":"step➛Pre Processing➛Correlation ID","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[2efbcc65-8115-42bc-a702-87ad143f1e90].response_body}}","label":"step➛Get Task Record➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[2efbcc65-8115-42bc-a702-87ad143f1e90].status_code}}","label":"step➛Get Task Record➛Status Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[0374290c-2261-4578-ab76-4bae53f648a1].filter}}","label":"step➛Pre Processing➛Filter","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[796c8e1a-0ce8-446b-a18d-9f8fb58e6755].recordid}}","label":"step➛Post processing➛RecordID","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[796c8e1a-0ce8-446b-a18d-9f8fb58e6755]._}}","label":"step➛Post processing➛","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[796c8e1a-0ce8-446b-a18d-9f8fb58e6755].remoterecord}}","label":"step➛Post processing➛RemoteRecord","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[55cba50a-d430-4556-8bbb-1e6ffe539c85].stdout}}","label":"step➛Script step➛stdout","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[55cba50a-d430-4556-8bbb-1e6ffe539c85].stderr}}","label":"step➛Script step➛stderr","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[55cba50a-d430-4556-8bbb-1e6ffe539c85].ecc_command_sysid}}","label":"step➛Script step➛ecc_command_sysid","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}}]</label_cache>
+        <label_cache>[{"name":"{{action.variable}}","label":"action➛variable","type":"action","ref":"ecc_agent","reference_display":"MID Server","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.mid_server}}","label":"action➛Mid Server","type":"action","ref":"ecc_agent","reference_display":"MID Server","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.command}}","label":"action➛Command","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.mid_server.name}}","label":"action➛Mid Server➛Name","type":"action","ref":"","reference_display":"Name","base_type":"string","parent_table_name":"ecc_agent","column_name":"name","choices":null,"attributes":{}},{"name":"{{action.local_table}}","label":"action➛Local Table","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action._}}","label":"action➛","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.number_id}}","label":"action➛Number / ID","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.remote_table}}","label":"action➛Remote Table","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.local_record}}","label":"action➛Local Record","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.remote_fields}}","label":"action➛Fields","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.run_asyngrounously}}","label":"action➛Run asyngrounously","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.run_asynchronously}}","label":"action➛Run asynchronously","type":"action","ref":"","reference_display":"","base_type":"boolean","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.execution_timeout}}","label":"action➛Execution Timeout","type":"action","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[55cba50a-d430-4556-8bbb-1e6ffe539c85].variable}}","label":"step➛Script step➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[55cba50a-d430-4556-8bbb-1e6ffe539c85].result}}","label":"step➛Script step➛result","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","uiTypeLabel":"JSON","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceUiUniqueId":"","sourceType":"","uiType":"json","uiUniqueId":"0895720d-b3ad-4a4c-bb6d-e142cd3dff3e"}},{"name":"{{step[0374290c-2261-4578-ab76-4bae53f648a1].variable}}","label":"step➛Pre Processing➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[0374290c-2261-4578-ab76-4bae53f648a1].variable1}}","label":"step➛Pre Processing➛variable1","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[0374290c-2261-4578-ab76-4bae53f648a1].variable2}}","label":"step➛Pre Processing➛variable2","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[0374290c-2261-4578-ab76-4bae53f648a1].remoteinstance}}","label":"step➛Pre Processing➛RemoteInstance","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[0374290c-2261-4578-ab76-4bae53f648a1].requestbody}}","label":"step➛Pre Processing➛RequestBody","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[0374290c-2261-4578-ab76-4bae53f648a1].remotetable}}","label":"step➛Pre Processing➛RemoteTable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[c054c2d9-3360-4a91-9e4b-2798a2607dfe].response_body}}","label":"step➛Create Remote Record➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[c054c2d9-3360-4a91-9e4b-2798a2607dfe].status_code}}","label":"step➛Create Remote Record➛Status Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[0374290c-2261-4578-ab76-4bae53f648a1].payload}}","label":"step➛Pre Processing➛Payload","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[796c8e1a-0ce8-446b-a18d-9f8fb58e6755].variable}}","label":"step➛Post processing➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[796c8e1a-0ce8-446b-a18d-9f8fb58e6755].response_body}}","label":"step➛Post processing➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[796c8e1a-0ce8-446b-a18d-9f8fb58e6755].status}}","label":"step➛Post processing➛Status","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[796c8e1a-0ce8-446b-a18d-9f8fb58e6755].error_message}}","label":"step➛Post processing➛Error Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[796c8e1a-0ce8-446b-a18d-9f8fb58e6755].errormessage}}","label":"step➛Post processing➛Error Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[796c8e1a-0ce8-446b-a18d-9f8fb58e6755].responsebody}}","label":"step➛Post processing➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[0374290c-2261-4578-ab76-4bae53f648a1].correlation_id}}","label":"step➛Pre Processing➛Correlation ID","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[2efbcc65-8115-42bc-a702-87ad143f1e90].response_body}}","label":"step➛Get Task Record➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[2efbcc65-8115-42bc-a702-87ad143f1e90].status_code}}","label":"step➛Get Task Record➛Status Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[0374290c-2261-4578-ab76-4bae53f648a1].filter}}","label":"step➛Pre Processing➛Filter","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[796c8e1a-0ce8-446b-a18d-9f8fb58e6755].recordid}}","label":"step➛Post processing➛RecordID","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[796c8e1a-0ce8-446b-a18d-9f8fb58e6755]._}}","label":"step➛Post processing➛","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[796c8e1a-0ce8-446b-a18d-9f8fb58e6755].remoterecord}}","label":"step➛Post processing➛RemoteRecord","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[55cba50a-d430-4556-8bbb-1e6ffe539c85].stdout}}","label":"step➛Script step➛stdout","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[55cba50a-d430-4556-8bbb-1e6ffe539c85].stderr}}","label":"step➛Script step➛stderr","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[55cba50a-d430-4556-8bbb-1e6ffe539c85].ecc_command_sysid}}","label":"step➛Script step➛ecc_command_sysid","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}}]</label_cache>
         <master>true</master>
         <name>Run Command on MID</name>
         <natlang/>
@@ -2053,15 +2247,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b90ca31c47ce19903d45b18c346d4300</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Global">global</sys_scope>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-09-16 13:49:30</sys_updated_on>
+        <sys_updated_on>2022-09-20 14:08:17</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_snapshot>
@@ -2089,10 +2283,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-09-16 13:49:31</sys_created_on>
         <sys_id>ca0ca31c47ce19903d45b18c346d436b</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-09-16 13:49:31</sys_updated_on>
-        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"35688d81-d62e-4b3a-8c6a-bd5b28aa681a\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"2\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
+        <sys_updated_on>2022-09-20 14:08:18</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"35688d81-d62e-4b3a-8c6a-bd5b28aa681a\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"2\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
         <variable display_value="Action Status">8a0ca31c47ce19903d45b18c346d434d</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=b90ca31c47ce19903d45b18c346d4300"/>
@@ -2186,10 +2380,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-09-16 13:49:30</sys_created_on>
         <sys_id>390ca31c47ce19903d45b18c346d4319</sys_id>
-        <sys_mod_count>4</sys_mod_count>
-        <sys_scope display_value="Global">global</sys_scope>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-09-18 16:52:20</sys_updated_on>
+        <sys_updated_on>2022-09-20 17:29:41</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=390ca31c47ce19903d45b18c346d4319"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -2200,14 +2394,17 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-09-16 13:49:31</sys_created_on>
         <sys_id>4a0ca31c47ce19903d45b18c346d4340</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-09-18 16:52:20</sys_updated_on>
+        <sys_updated_on>2022-09-20 17:29:41</sys_updated_on>
         <value>(function execute(inputs, outputs) {
 
 // Send Command:
 
   var cmd = inputs.command.trim();
+  var exec_timeout = inputs.exec_timeout;
+  
+  if( isNaN(exec_timeout) || exec_timeout &lt;= 0 ) exec_timeout = 15; 
 
   var ecc_queue = new GlideRecord("ecc_queue");
   ecc_queue.initialize();
@@ -2223,16 +2420,9 @@
     ecc_queue.payload = '&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;parameters&gt;&lt;parameter name="skip_sensor" value="true"/&gt;&lt;/parameters&gt;';
   }
   
-  
-
   //Get SysID of new ECC Queue record
   var ecc_sysid = ecc_queue.insert();
 
-  //Set Response to current record sys_id
-  //ecc_queue.response_to = ecc_sysid;
-
-  //Update new ECC Queue record
-  //ecc_queue.update();
 
   if( inputs.async_run == 'false' ) {
        //Get Response from ECC Queue that was linked to the original Output command in the response_to reference 
@@ -2242,7 +2432,7 @@
 
          //Get response that matches response to record set in output command sent earlier
 
-         while ( (response_sysid == '-') &amp;&amp; (count &lt; 15500) ) {
+         while ( (response_sysid == '-') &amp;&amp; (count &lt; (exec_timeout * 1000) ) ) {
            ecc_response.addQuery("response_to", ecc_sysid);
            ecc_response.addQuery("queue", "input");
            ecc_response.query();
@@ -2257,13 +2447,13 @@
          }
 
          if (response_sysid != '-') {
-           	  outputs.result = 'Command terminated in ' + count / 1000 + ' seconds.';
+           	  outputs.result = 'Command terminated in ' + ((count-500)/1000) + ' seconds.';
               var xmldoc = new XMLDocument(ecc_response.payload);
 			  outputs.stdout = xmldoc.getNodeText('//stdout');
               outputs.stderr = xmldoc.getNodeText('//stderr');
          } 
          else {
-              outputs.result = 'Timeout getting response in ' + count / 1000 + ' seconds.';
+              outputs.result = 'Timeout getting response in ' + ((count-500)/1000) + ' seconds.';
               outputs.ecc_command_sysid = ecc_sysid;
          }  
   }
@@ -2344,6 +2534,18 @@
         <value>{{action.command}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>exec_timeout</field>
+        <id>390ca31c47ce19903d45b18c346d4319</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-20 14:08:18</sys_created_on>
+        <sys_id>c4b65cbd974ad1d0b66fbd8c1253af41</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-20 14:08:18</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_390ca31c47ce19903d45b18c346d4319</table>
+        <value>{{action.execution_timeout}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>midserver</field>
         <id>390ca31c47ce19903d45b18c346d4319</id>
         <sys_created_by>admin</sys_created_by>
@@ -2369,7 +2571,88 @@
     </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_390ca31c47ce19903d45b18c346d4319^id=390ca31c47ce19903d45b18c346d4319"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=390ca31c47ce19903d45b18c346d4319"/>
-    <sys_hub_step_ext_input action="delete_multiple" query="model=390ca31c47ce19903d45b18c346d4319^sys_idNOT IN310ca31c47ce19903d45b18c346d4322,710ca31c47ce19903d45b18c346d4326,bd0ca31c47ce19903d45b18c346d431c"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=390ca31c47ce19903d45b18c346d4319^sys_idNOT IN0cb65cbd974ad1d0b66fbd8c1253af2a,310ca31c47ce19903d45b18c346d4322,710ca31c47ce19903d45b18c346d4326,bd0ca31c47ce19903d45b18c346d431c"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>exec_timeout</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>exec_timeout</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">390ca31c47ce19903d45b18c346d4319</model>
+        <model_id>390ca31c47ce19903d45b18c346d4319</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_390ca31c47ce19903d45b18c346d4319</name>
+        <next_element/>
+        <order>300</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-20 14:08:17</sys_created_on>
+        <sys_id>0cb65cbd974ad1d0b66fbd8c1253af2a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-20 14:08:17</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
     <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -2432,14 +2715,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-09-16 13:49:30</sys_created_on>
         <sys_id>310ca31c47ce19903d45b18c346d4322</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Global">global</sys_scope>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-09-16 13:49:30</sys_updated_on>
+        <sys_updated_on>2022-09-20 14:08:17</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2513,14 +2796,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-09-16 13:49:30</sys_created_on>
         <sys_id>710ca31c47ce19903d45b18c346d4326</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Global">global</sys_scope>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-09-16 13:49:30</sys_updated_on>
+        <sys_updated_on>2022-09-20 14:08:17</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2594,14 +2877,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-09-16 13:49:30</sys_created_on>
         <sys_id>bd0ca31c47ce19903d45b18c346d431c</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Global">global</sys_scope>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-09-16 13:49:30</sys_updated_on>
+        <sys_updated_on>2022-09-20 14:08:17</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2676,14 +2959,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-09-16 13:49:31</sys_created_on>
         <sys_id>4e0ca31c47ce19903d45b18c346d4333</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Global">global</sys_scope>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-09-16 13:49:31</sys_updated_on>
+        <sys_updated_on>2022-09-20 14:08:17</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2757,14 +3040,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-09-16 13:49:30</sys_created_on>
         <sys_id>b90ca31c47ce19903d45b18c346d432a</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Global">global</sys_scope>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-09-16 13:49:30</sys_updated_on>
+        <sys_updated_on>2022-09-20 14:08:17</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2838,14 +3121,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-09-16 13:49:31</sys_created_on>
         <sys_id>ca0ca31c47ce19903d45b18c346d432f</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Global">global</sys_scope>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-09-16 13:49:31</sys_updated_on>
+        <sys_updated_on>2022-09-20 14:08:17</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2919,14 +3202,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-09-16 13:49:31</sys_created_on>
         <sys_id>ce0ca31c47ce19903d45b18c346d4337</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Global">global</sys_scope>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-09-16 13:49:31</sys_updated_on>
+        <sys_updated_on>2022-09-20 14:08:17</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -3032,7 +3315,7 @@
         <url/>
         <url_target/>
     </sys_documentation>
-    <sys_hub_action_input action="delete_multiple" query="model=b90ca31c47ce19903d45b18c346d4300^sys_idNOT IN350ca31c47ce19903d45b18c346d430c,b10ca31c47ce19903d45b18c346d4304,bd0ca31c47ce19903d45b18c346d4310"/>
+    <sys_hub_action_input action="delete_multiple" query="model=b90ca31c47ce19903d45b18c346d4300^sys_idNOT IN350ca31c47ce19903d45b18c346d430c,4cb61cbd974ad1d0b66fbd8c1253afca,b10ca31c47ce19903d45b18c346d4304,bd0ca31c47ce19903d45b18c346d4310"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -3095,14 +3378,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-09-16 13:49:30</sys_created_on>
         <sys_id>350ca31c47ce19903d45b18c346d430c</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Global">global</sys_scope>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-09-16 13:49:30</sys_updated_on>
+        <sys_updated_on>2022-09-20 14:08:17</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -3115,6 +3398,88 @@
         <xml_view>false</xml_view>
     </sys_hub_action_input>
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=350ca31c47ce19903d45b18c346d430c"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=14ca4d44-64eb-41ca-b7dd-f864da7d1545</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>execution_timeout</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>Execution Timeout</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Run Command on MID">b90ca31c47ce19903d45b18c346d4300</model>
+        <model_id>b90ca31c47ce19903d45b18c346d4300</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_b90ca31c47ce19903d45b18c346d4300</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-20 14:08:17</sys_created_on>
+        <sys_id>4cb61cbd974ad1d0b66fbd8c1253afca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-20 14:08:17</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=4cb61cbd974ad1d0b66fbd8c1253afca"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -3177,14 +3542,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-09-16 13:49:30</sys_created_on>
         <sys_id>b10ca31c47ce19903d45b18c346d4304</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Global">global</sys_scope>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-09-16 13:49:30</sys_updated_on>
+        <sys_updated_on>2022-09-20 14:08:17</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -3259,14 +3624,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-09-16 13:49:30</sys_created_on>
         <sys_id>bd0ca31c47ce19903d45b18c346d4310</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Global">global</sys_scope>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-09-16 13:49:30</sys_updated_on>
+        <sys_updated_on>2022-09-20 14:08:17</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -3344,14 +3709,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-09-16 13:49:31</sys_created_on>
         <sys_id>020ca31c47ce19903d45b18c346d4348</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Global">global</sys_scope>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-09-16 13:49:31</sys_updated_on>
+        <sys_updated_on>2022-09-20 14:08:18</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -3429,14 +3794,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-09-16 13:49:31</sys_created_on>
         <sys_id>460ca31c47ce19903d45b18c346d435e</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Global">global</sys_scope>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-09-16 13:49:31</sys_updated_on>
+        <sys_updated_on>2022-09-20 14:08:18</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -3514,14 +3879,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-09-16 13:49:31</sys_created_on>
         <sys_id>860ca31c47ce19903d45b18c346d4352</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Global">global</sys_scope>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-09-16 13:49:31</sys_updated_on>
+        <sys_updated_on>2022-09-20 14:08:18</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -3599,14 +3964,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-09-16 13:49:31</sys_created_on>
         <sys_id>8a0ca31c47ce19903d45b18c346d434d</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Global">global</sys_scope>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-09-16 13:49:31</sys_updated_on>
+        <sys_updated_on>2022-09-20 14:08:18</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -3684,14 +4049,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-09-16 13:49:31</sys_created_on>
         <sys_id>8a0ca31c47ce19903d45b18c346d4359</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Global">global</sys_scope>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-09-16 13:49:31</sys_updated_on>
+        <sys_updated_on>2022-09-20 14:08:18</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -3769,14 +4134,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-09-16 13:49:31</sys_created_on>
         <sys_id>ce0ca31c47ce19903d45b18c346d4362</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Global">global</sys_scope>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-09-16 13:49:31</sys_updated_on>
+        <sys_updated_on>2022-09-20 14:08:18</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -3802,7 +4167,7 @@
         <sys_updated_on>2022-09-16 13:49:31</sys_updated_on>
     </sys_hub_action_status_metadata>
     <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=8a0ca31c47ce19903d45b18c346d436e"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_b90ca31c47ce19903d45b18c346d4300^sys_idNOT IN350ca31c47ce19903d45b18c346d430b,3d0ca31c47ce19903d45b18c346d4316,bd0ca31c47ce19903d45b18c346d430f"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_b90ca31c47ce19903d45b18c346d4300^sys_idNOT IN350ca31c47ce19903d45b18c346d430b,3d0ca31c47ce19903d45b18c346d4316,8cb61cbd974ad1d0b66fbd8c1253afce,bd0ca31c47ce19903d45b18c346d430f"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>mid_server</element>
         <help/>
@@ -3846,6 +4211,29 @@
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2022-09-16 13:49:30</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>execution_timeout</element>
+        <help/>
+        <hint/>
+        <label>Execution Timeout</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_b90ca31c47ce19903d45b18c346d4300</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-20 14:08:17</sys_created_on>
+        <sys_id>8cb61cbd974ad1d0b66fbd8c1253afce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Execute Commands on Mid Server" source="59493655970a51d0b66fbd8c1253afba">59493655970a51d0b66fbd8c1253afba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-20 14:08:17</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
