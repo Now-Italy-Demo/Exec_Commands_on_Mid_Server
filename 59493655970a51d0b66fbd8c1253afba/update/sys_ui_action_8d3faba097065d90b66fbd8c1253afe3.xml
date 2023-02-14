@@ -56,7 +56,7 @@ action.setRedirectURL(current);]]></script>
         <sys_mod_count>55</sys_mod_count>
         <sys_name>Run</sys_name>
         <sys_overrides display_value="Update">42df02e20a0a0b340080e61b551f2909</sys_overrides>
-        <sys_package display_value="Global" source="global">global</sys_package>
+        <sys_package display_value="Execute Commands on Mid Server" source="59493655970a51d0b66fbd8c1253afba">59493655970a51d0b66fbd8c1253afba</sys_package>
         <sys_policy/>
         <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
         <sys_update_name>sys_ui_action_8d3faba097065d90b66fbd8c1253afe3</sys_update_name>

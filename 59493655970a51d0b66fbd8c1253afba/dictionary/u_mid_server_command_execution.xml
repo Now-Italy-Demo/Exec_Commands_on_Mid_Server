@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Mid Server Command Execution" max_length="40" name="u_mid_server_command_execution" sizeclass="3" type="collection">
+    <element db_object_id="3e20c7091b05e11028f9b7a5464bcb0b" label="Mid Server Command Execution" max_length="40" name="u_mid_server_command_execution" type="collection">
         <element label="Command" max_length="1024" name="u_command" type="string"/>
         <element default="30" hint="Sets the execution timeout in seconds. If timeout is reached, process is killed. If timeout is set to 0 process is executed in background." label="Exec_Timeout" max_length="40" name="u_exec_timeout" type="integer"/>
         <element label="Host OS" max_length="25" name="u_host_os" read_only="true" type="string"/>

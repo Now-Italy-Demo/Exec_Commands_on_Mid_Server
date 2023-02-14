@@ -9,7 +9,6 @@
         <create_access>false</create_access>
         <create_access_controls>true</create_access_controls>
         <delete_access>false</delete_access>
-        <extension_model/>
         <is_extendable>false</is_extendable>
         <label>Mid Server Command Execution</label>
         <live_feed_enabled>false</live_feed_enabled>
@@ -19,18 +18,16 @@
         <read_access>true</read_access>
         <scriptable_table>false</scriptable_table>
         <super_class/>
-        <sys_class_code/>
         <sys_class_name>sys_db_object</sys_class_name>
-        <sys_class_path/>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-09-17 08:26:21</sys_created_on>
-        <sys_id>a95bab6897c25d90b66fbd8c1253af48</sys_id>
+        <sys_id>3e20c7091b05e11028f9b7a5464bcb0b</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_name>Mid Server Command Execution</sys_name>
-        <sys_package display_value="Global" source="global">global</sys_package>
+        <sys_package display_value="Execute Commands on Mid Server" source="59493655970a51d0b66fbd8c1253afba">59493655970a51d0b66fbd8c1253afba</sys_package>
         <sys_policy/>
         <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
-        <sys_update_name>sys_db_object_a95bab6897c25d90b66fbd8c1253af48</sys_update_name>
+        <sys_update_name>sys_db_object_3e20c7091b05e11028f9b7a5464bcb0b</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2022-09-19 12:42:49</sys_updated_on>
         <update_access>false</update_access>
@@ -40,7 +37,7 @@
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</claim_owner_scope>
         <claim_timestamp>18355c5c8f70000001</claim_timestamp>
-        <metadata_update_name>sys_db_object_a95bab6897c25d90b66fbd8c1253af48</metadata_update_name>
+        <metadata_update_name>sys_db_object_3e20c7091b05e11028f9b7a5464bcb0b</metadata_update_name>
         <previous_claim_app_version>1.0.0</previous_claim_app_version>
         <previous_claim_name>Execute Commands on Mid Server</previous_claim_name>
         <previous_claim_scope>59493655970a51d0b66fbd8c1253afba</previous_claim_scope>
