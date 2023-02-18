@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_pd_activity_definition">
+    <sys_pd_activity_definition action="DELETE">
+        <access>public</access>
+        <active>true</active>
+        <activity_type display_value="Instructional">d4dde0875b00001070e4492c11f91a90</activity_type>
+        <badge/>
+        <category/>
+        <description/>
+        <experience_display_preferences>associated_table=advanced;associated_record=advanced;experience_status_table=advanced;experience_status_record=advanced;tagline=advanced;icon=advanced;title=advanced;description=advanced;footer=advanced;is_automated=advanced;</experience_display_preferences>
+        <input_display_preferences>host=standard;message=standard;wait=standard;</input_display_preferences>
+        <inputs/>
+        <label>Speed Test</label>
+        <name>speed_test</name>
+        <outputs/>
+        <source>a5177b991b01651028f9b7a5464bcb1f</source>
+        <source_type>sys_hub_flow</source_type>
+        <sys_class_name>sys_pd_activity_definition</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-15 20:54:42</sys_created_on>
+        <sys_id>4ade7fd51b41651028f9b7a5464bcb3c</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Speed Test</sys_name>
+        <sys_package display_value="Execute Commands on Mid Server" source="59493655970a51d0b66fbd8c1253afba">59493655970a51d0b66fbd8c1253afba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
+        <sys_update_name>sys_pd_activity_definition_4ade7fd51b41651028f9b7a5464bcb3c</sys_update_name>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 21:08:50</sys_updated_on>
+        <system_level>false</system_level>
+        <table>global</table>
+        <type_vals/>
+        <type_vals/>
+        <wait_for_completion>true</wait_for_completion>
+    </sys_pd_activity_definition>
+    <sys_variable_value action="DELETE" query="document_key=4ade7fd51b41651028f9b7a5464bcb3c"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_pd_activity_definition</document>
+        <document_key>4ade7fd51b41651028f9b7a5464bcb3c</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-15 20:58:21</sys_created_on>
+        <sys_id>82dfb7591b41651028f9b7a5464bcb1e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 20:59:31</sys_updated_on>
+        <value>{{act.act_instance.label}}</value>
+        <variable display_value="Title">49ed24875b00001070e4492c11f91aa5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_pd_activity_definition</document>
+        <document_key>4ade7fd51b41651028f9b7a5464bcb3c</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-15 20:58:21</sys_created_on>
+        <sys_id>8adfb7591b41651028f9b7a5464bcb1d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 20:59:31</sys_updated_on>
+        <value>&lt;p&gt;{{vl.Speed Test on Host./end.result}}&lt;/p&gt;</value>
+        <variable display_value="Description">267e68875b00001070e4492c11f91a34</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_pd_activity_definition</document>
+        <document_key>4ade7fd51b41651028f9b7a5464bcb3c</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-15 21:00:13</sys_created_on>
+        <sys_id>c94084691b41651028f9b7a5464bcbc8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 21:00:13</sys_updated_on>
+        <value>analytics_center_outline</value>
+        <variable display_value="Icon">24bdf44673030010fe4a6da44cf6a707</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="table=var__m_sys_hub_flow_input_2b8b42e31b630010affd0e55cc4bcbe9^id=4ade7fd51b41651028f9b7a5464bcb3c"/>
+    <sys_element_mapping action="DELETE" query="table=var__m_sys_hub_flow_output_a5177b991b01651028f9b7a5464bcb1f^id=4ade7fd51b41651028f9b7a5464bcb3c"/>
+    <sys_element_mapping action="DELETE" query="id=4ade7fd51b41651028f9b7a5464bcb3c"/>
+    <sys_element_mapping action="DELETE">
+        <field>associated_record</field>
+        <id>4ade7fd51b41651028f9b7a5464bcb3c</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-15 20:58:21</sys_created_on>
+        <sys_id>82dfb7591b41651028f9b7a5464bcb1d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 20:58:21</sys_updated_on>
+        <table>var__m_sys_pd_activity_type_prop_d4dde0875b00001070e4492c11f91a90</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>description</field>
+        <id>4ade7fd51b41651028f9b7a5464bcb3c</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-15 20:58:21</sys_created_on>
+        <sys_id>46dfb7591b41651028f9b7a5464bcb1d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 20:58:21</sys_updated_on>
+        <table>var__m_sys_pd_activity_type_prop_d4dde0875b00001070e4492c11f91a90</table>
+        <value>{{vl.Speed Test on Host./end.result}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>experience_status_record</field>
+        <id>4ade7fd51b41651028f9b7a5464bcb3c</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-15 20:58:21</sys_created_on>
+        <sys_id>cadfb7591b41651028f9b7a5464bcb1c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 20:58:21</sys_updated_on>
+        <table>var__m_sys_pd_activity_type_prop_d4dde0875b00001070e4492c11f91a90</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>icon</field>
+        <id>4ade7fd51b41651028f9b7a5464bcb3c</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-15 21:00:13</sys_created_on>
+        <sys_id>454084691b41651028f9b7a5464bcbc8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 21:00:13</sys_updated_on>
+        <table>var__m_sys_pd_activity_type_prop_d4dde0875b00001070e4492c11f91a90</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>title</field>
+        <id>4ade7fd51b41651028f9b7a5464bcb3c</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-15 20:58:21</sys_created_on>
+        <sys_id>0adfb7591b41651028f9b7a5464bcb1d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 20:59:31</sys_updated_on>
+        <table>var__m_sys_pd_activity_type_prop_d4dde0875b00001070e4492c11f91a90</table>
+        <value>{{act.act_instance.label}}</value>
+    </sys_element_mapping>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</application>
+        <file_path/>
+        <instance_id>27284aaadbe4251091232f17d49619a9</instance_id>
+        <instance_name>italytelco</instance_name>
+        <name>sys_pd_activity_definition_4ade7fd51b41651028f9b7a5464bcb3c</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_pd_activity_definition"><sys_pd_activity_definition action="INSERT_OR_UPDATE"><access>public</access><active>true</active><activity_type display_value="Instructional">d4dde0875b00001070e4492c11f91a90</activity_type><badge/><category/><description/><experience_display_preferences>associated_table=advanced;associated_record=advanced;experience_status_table=advanced;experience_status_record=advanced;tagline=advanced;icon=advanced;title=advanced;description=advanced;footer=advanced;is_automated=advanced;</experience_display_preferences><input_display_preferences>host=standard;message=standard;wait=standard;</input_display_preferences><inputs/><label>Speed Test</label><name>speed_test</name><outputs/><source>a5177b991b01651028f9b7a5464bcb1f</source><source_type>sys_hub_flow</source_type><sys_class_name>sys_pd_activity_definition</sys_class_name><sys_created_by>antonio</sys_created_by><sys_created_on>2023-02-15 20:54:42</sys_created_on><sys_id>4ade7fd51b41651028f9b7a5464bcb3c</sys_id><sys_mod_count>6</sys_mod_count><sys_name>Speed Test</sys_name><sys_package display_value="Execute Commands on Mid Server" source="59493655970a51d0b66fbd8c1253afba">59493655970a51d0b66fbd8c1253afba</sys_package><sys_policy/><sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope><sys_update_name>sys_pd_activity_definition_4ade7fd51b41651028f9b7a5464bcb3c</sys_update_name><sys_updated_by>antonio</sys_updated_by><sys_updated_on>2023-02-15 21:08:50</sys_updated_on><system_level>false</system_level><table>global</table><type_vals/><type_vals/><wait_for_completion>true</wait_for_completion></sys_pd_activity_definition><sys_variable_value action="delete_multiple" query="document_key=4ade7fd51b41651028f9b7a5464bcb3c"/><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_pd_activity_definition</document><document_key>4ade7fd51b41651028f9b7a5464bcb3c</document_key><order>100</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>antonio</sys_created_by><sys_created_on>2023-02-15 20:58:21</sys_created_on><sys_id>82dfb7591b41651028f9b7a5464bcb1e</sys_id><sys_mod_count>1</sys_mod_count><sys_updated_by>antonio</sys_updated_by><sys_updated_on>2023-02-15 20:59:31</sys_updated_on><value>{{act.act_instance.label}}</value><variable display_value="Title">49ed24875b00001070e4492c11f91aa5</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_pd_activity_definition</document><document_key>4ade7fd51b41651028f9b7a5464bcb3c</document_key><order>100</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>antonio</sys_created_by><sys_created_on>2023-02-15 20:58:21</sys_created_on><sys_id>8adfb7591b41651028f9b7a5464bcb1d</sys_id><sys_mod_count>1</sys_mod_count><sys_updated_by>antonio</sys_updated_by><sys_updated_on>2023-02-15 20:59:31</sys_updated_on><value>&lt;p&gt;{{vl.Speed Test on Host./end.result}}&lt;/p&gt;</value><variable display_value="Description">267e68875b00001070e4492c11f91a34</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_pd_activity_definition</document><document_key>4ade7fd51b41651028f9b7a5464bcb3c</document_key><order>100</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>antonio</sys_created_by><sys_created_on>2023-02-15 21:00:13</sys_created_on><sys_id>c94084691b41651028f9b7a5464bcbc8</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>antonio</sys_updated_by><sys_updated_on>2023-02-15 21:00:13</sys_updated_on><value>analytics_center_outline</value><variable display_value="Icon">24bdf44673030010fe4a6da44cf6a707</variable></sys_variable_value><sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_input_2b8b42e31b630010affd0e55cc4bcbe9^id=4ade7fd51b41651028f9b7a5464bcb3c"/><sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_a5177b991b01651028f9b7a5464bcb1f^id=4ade7fd51b41651028f9b7a5464bcb3c"/><sys_element_mapping action="delete_multiple" query="id=4ade7fd51b41651028f9b7a5464bcb3c"/><sys_element_mapping action="INSERT_OR_UPDATE"><field>associated_record</field><id>4ade7fd51b41651028f9b7a5464bcb3c</id><sys_created_by>antonio</sys_created_by><sys_created_on>2023-02-15 20:58:21</sys_created_on><sys_id>82dfb7591b41651028f9b7a5464bcb1d</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>antonio</sys_updated_by><sys_updated_on>2023-02-15 20:58:21</sys_updated_on><table>var__m_sys_pd_activity_type_prop_d4dde0875b00001070e4492c11f91a90</table><value/></sys_element_mapping><sys_element_mapping action="INSERT_OR_UPDATE"><field>description</field><id>4ade7fd51b41651028f9b7a5464bcb3c</id><sys_created_by>antonio</sys_created_by><sys_created_on>2023-02-15 20:58:21</sys_created_on><sys_id>46dfb7591b41651028f9b7a5464bcb1d</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>antonio</sys_updated_by><sys_updated_on>2023-02-15 20:58:21</sys_updated_on><table>var__m_sys_pd_activity_type_prop_d4dde0875b00001070e4492c11f91a90</table><value>{{vl.Speed Test on Host./end.result}}</value></sys_element_mapping><sys_element_mapping action="INSERT_OR_UPDATE"><field>experience_status_record</field><id>4ade7fd51b41651028f9b7a5464bcb3c</id><sys_created_by>antonio</sys_created_by><sys_created_on>2023-02-15 20:58:21</sys_created_on><sys_id>cadfb7591b41651028f9b7a5464bcb1c</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>antonio</sys_updated_by><sys_updated_on>2023-02-15 20:58:21</sys_updated_on><table>var__m_sys_pd_activity_type_prop_d4dde0875b00001070e4492c11f91a90</table><value/></sys_element_mapping><sys_element_mapping action="INSERT_OR_UPDATE"><field>icon</field><id>4ade7fd51b41651028f9b7a5464bcb3c</id><sys_created_by>antonio</sys_created_by><sys_created_on>2023-02-15 21:00:13</sys_created_on><sys_id>454084691b41651028f9b7a5464bcbc8</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>antonio</sys_updated_by><sys_updated_on>2023-02-15 21:00:13</sys_updated_on><table>var__m_sys_pd_activity_type_prop_d4dde0875b00001070e4492c11f91a90</table><value/></sys_element_mapping><sys_element_mapping action="INSERT_OR_UPDATE"><field>title</field><id>4ade7fd51b41651028f9b7a5464bcb3c</id><sys_created_by>antonio</sys_created_by><sys_created_on>2023-02-15 20:58:21</sys_created_on><sys_id>0adfb7591b41651028f9b7a5464bcb1d</sys_id><sys_mod_count>1</sys_mod_count><sys_updated_by>antonio</sys_updated_by><sys_updated_on>2023-02-15 20:59:31</sys_updated_on><table>var__m_sys_pd_activity_type_prop_d4dde0875b00001070e4492c11f91a90</table><value>{{act.act_instance.label}}</value></sys_element_mapping></record_update>]]></payload>
+        <payload_hash>-1986918375</payload_hash>
+        <record_name>Speed Test</record_name>
+        <reverted_from/>
+        <source>5a60c3491b05e11028f9b7a5464bcb45</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-15 21:08:50</sys_created_on>
+        <sys_id>933240ad1b41651028f9b7a5464bcbe5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18656e89ccf0000001</sys_recorded_at>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 21:08:50</sys_updated_on>
+        <type>Activity Definition</type>
+        <update_guid>1b3240ad8b416510a18938279d96a7e4</update_guid>
+        <update_guid_history>1b3240ad8b416510a18938279d96a7e4:-1986918375,992240ad01416510d863a82f3f0bce01:-1059430724,494040a99f416510f546d9fa3ee62c24:446931563,83100c693f4165108643507dbe6d2980:-1243485341,cadfb75951416510b58bfc05a680cd20:-1378300049,762f3719d24165106fb95403358ca2a2:-219990051,d80f37d52b416510edb15982e12dfb57:1410721790</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-15 22:29:17</sys_created_on>
+        <sys_db_object display_value="" name="sys_pd_activity_definition">sys_pd_activity_definition</sys_db_object>
+        <sys_id>27ce3075fa6941f7a6119a2af6076e11</sys_id>
+        <sys_metadata>4ade7fd51b41651028f9b7a5464bcb3c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Speed Test</sys_name>
+        <sys_package display_value="Execute Commands on Mid Server" source="59493655970a51d0b66fbd8c1253afba">59493655970a51d0b66fbd8c1253afba</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
+        <sys_scope_delete display_value="">2aa3642b846043429621f9fb9e1e60b9</sys_scope_delete>
+        <sys_update_name>sys_pd_activity_definition_4ade7fd51b41651028f9b7a5464bcb3c</sys_update_name>
+        <sys_update_version display_value="sys_pd_activity_definition_4ade7fd51b41651028f9b7a5464bcb3c">933240ad1b41651028f9b7a5464bcbe5</sys_update_version>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 22:29:17</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

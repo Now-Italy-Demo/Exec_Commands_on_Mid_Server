@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl/>
+        <http_method>GET</http_method>
+        <name>indicators</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+	
+	var writer = response.getStreamWriter();
+	response.setContentType('text/html');
+
+	var gr = new GlideRecord('u_downdetector_data');
+	gr.orderByDesc('sys_created_on');
+	gr.query();
+	if( gr.next() ) {
+		writer.writeString( '<html><head><style> img { height: auto; max-width: 100%; } </style></head><body><center>' + gr.getValue('u_down_indicators') + '</body></html>');
+		// writer.writeString( gr.getValue('u_down_indicators') );
+	}
+	else {
+		writer.writeString('');
+	}
+
+})(request, response);]]></operation_script>
+        <operation_uri>/api/snc/get_gfx/indicators</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/indicators</relative_path>
+        <request_example/>
+        <requires_acl_authorization>false</requires_acl_authorization>
+        <requires_authentication>false</requires_authentication>
+        <requires_snc_internal_role>false</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-16 21:56:55</sys_created_on>
+        <sys_id>00a6ddf51b41e51028f9b7a5464bcb51</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_name>indicators</sys_name>
+        <sys_package display_value="Execute Commands on Mid Server" source="59493655970a51d0b66fbd8c1253afba">59493655970a51d0b66fbd8c1253afba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
+        <sys_update_name>sys_ws_operation_00a6ddf51b41e51028f9b7a5464bcb51</sys_update_name>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-18 10:37:26</sys_updated_on>
+        <web_service_definition display_value="get_gfx">504655f51b41e51028f9b7a5464bcb25</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_pd_activity_type">
+    <sys_pd_activity_type action="INSERT_OR_UPDATE">
+        <color>#EFD7DD</color>
+        <icon display_value="news-outline">news_outline</icon>
+        <name>Test Antonio</name>
+        <sys_class_name>sys_pd_activity_type</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-15 14:23:54</sys_created_on>
+        <sys_id>67852e911b49251028f9b7a5464bcb01</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Test Antonio</sys_name>
+        <sys_package display_value="Execute Commands on Mid Server" source="59493655970a51d0b66fbd8c1253afba">59493655970a51d0b66fbd8c1253afba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
+        <sys_update_name>sys_pd_activity_type_67852e911b49251028f9b7a5464bcb01</sys_update_name>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 14:24:39</sys_updated_on>
+    </sys_pd_activity_type>
+</record_update>

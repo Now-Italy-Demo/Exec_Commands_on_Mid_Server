@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="par_dashboard_user_metadata">
+    <par_dashboard_user_metadata action="DELETE">
+        <created_by_user display_value="Antonio Rizzi">ed159edb87b0ed506afa65f30cbb3528</created_by_user>
+        <created_on>2023-02-16 21:27:38</created_on>
+        <dashboard display_value="Test Down Detector">a4205d7d1b01e51028f9b7a5464bcb3e</dashboard>
+        <last_updated_on>2023-02-16 21:27:38</last_updated_on>
+        <requested_by_user/>
+        <sys_class_name>par_dashboard_user_metadata</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-16 21:27:38</sys_created_on>
+        <sys_id>a4205d7d1b01e51028f9b7a5464bcb41</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Execute Commands on Mid Server" source="59493655970a51d0b66fbd8c1253afba">59493655970a51d0b66fbd8c1253afba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
+        <sys_update_name>par_dashboard_user_metadata_a4205d7d1b01e51028f9b7a5464bcb41</sys_update_name>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-16 21:27:38</sys_updated_on>
+        <updated_by_user display_value="Antonio Rizzi">ed159edb87b0ed506afa65f30cbb3528</updated_by_user>
+    </par_dashboard_user_metadata>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</application>
+        <file_path/>
+        <instance_id>27284aaadbe4251091232f17d49619a9</instance_id>
+        <instance_name>italytelco</instance_name>
+        <name>par_dashboard_user_metadata_a4205d7d1b01e51028f9b7a5464bcb41</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="par_dashboard_user_metadata"><par_dashboard_user_metadata action="INSERT_OR_UPDATE"><created_by_user display_value="Antonio Rizzi">ed159edb87b0ed506afa65f30cbb3528</created_by_user><created_on>2023-02-16 21:27:38</created_on><dashboard display_value="Test Down Detector">a4205d7d1b01e51028f9b7a5464bcb3e</dashboard><last_updated_on>2023-02-16 21:27:38</last_updated_on><requested_by_user/><sys_class_name>par_dashboard_user_metadata</sys_class_name><sys_created_by>antonio</sys_created_by><sys_created_on>2023-02-16 21:27:38</sys_created_on><sys_id>a4205d7d1b01e51028f9b7a5464bcb41</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Execute Commands on Mid Server" source="59493655970a51d0b66fbd8c1253afba">59493655970a51d0b66fbd8c1253afba</sys_package><sys_policy/><sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope><sys_update_name>par_dashboard_user_metadata_a4205d7d1b01e51028f9b7a5464bcb41</sys_update_name><sys_updated_by>antonio</sys_updated_by><sys_updated_on>2023-02-16 21:27:38</sys_updated_on><updated_by_user display_value="Antonio Rizzi">ed159edb87b0ed506afa65f30cbb3528</updated_by_user></par_dashboard_user_metadata></record_update>]]></payload>
+        <payload_hash>1664872770</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>5a60c3491b05e11028f9b7a5464bcb45</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-16 21:27:38</sys_created_on>
+        <sys_id>e8205d7d1b01e51028f9b7a5464bcb43</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1865c20304e0000001</sys_recorded_at>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-16 21:27:38</sys_updated_on>
+        <type>PAR Dashboard User Metadata</type>
+        <update_guid>e0205d7d4c01e510dbd8b966a15f6a43</update_guid>
+        <update_guid_history>e0205d7d4c01e510dbd8b966a15f6a43:1664872770</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">bef1d9311b41e51028f9b7a5464bcbb3</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-16 21:35:42</sys_created_on>
+        <sys_db_object display_value="" name="par_dashboard_user_metadata">par_dashboard_user_metadata</sys_db_object>
+        <sys_id>8c29036ad7aa4db18ed20192c67b9339</sys_id>
+        <sys_metadata>a4205d7d1b01e51028f9b7a5464bcb41</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Execute Commands on Mid Server" source="59493655970a51d0b66fbd8c1253afba">59493655970a51d0b66fbd8c1253afba</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
+        <sys_scope_delete display_value="">2aa3642b846043429621f9fb9e1e60b9</sys_scope_delete>
+        <sys_update_name>par_dashboard_user_metadata_a4205d7d1b01e51028f9b7a5464bcb41</sys_update_name>
+        <sys_update_version display_value="par_dashboard_user_metadata_a4205d7d1b01e51028f9b7a5464bcb41">e8205d7d1b01e51028f9b7a5464bcb43</sys_update_version>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-16 21:35:42</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

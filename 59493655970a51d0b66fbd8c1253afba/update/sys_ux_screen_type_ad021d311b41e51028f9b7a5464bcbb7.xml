@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_screen_type">
+    <sys_ux_screen_type action="INSERT_OR_UPDATE">
+        <description/>
+        <name>Downdetector</name>
+        <sys_class_name>sys_ux_screen_type</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-16 21:35:53</sys_created_on>
+        <sys_id>ad021d311b41e51028f9b7a5464bcbb7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Downdetector</sys_name>
+        <sys_package display_value="Execute Commands on Mid Server" source="59493655970a51d0b66fbd8c1253afba">59493655970a51d0b66fbd8c1253afba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
+        <sys_update_name>sys_ux_screen_type_ad021d311b41e51028f9b7a5464bcbb7</sys_update_name>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-16 21:35:53</sys_updated_on>
+    </sys_ux_screen_type>
+    <sys_translated_text action="delete_multiple" query="documentkey=ad021d311b41e51028f9b7a5464bcbb7"/>
+</record_update>

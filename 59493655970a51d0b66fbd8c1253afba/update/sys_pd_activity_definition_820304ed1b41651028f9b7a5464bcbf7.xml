@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_pd_activity_definition">
+    <sys_pd_activity_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <activity_type display_value="Instructional">d4dde0875b00001070e4492c11f91a90</activity_type>
+        <badge/>
+        <category/>
+        <description/>
+        <experience_display_preferences>associated_table=advanced;associated_record=advanced;experience_status_table=advanced;experience_status_record=advanced;tagline=advanced;icon=advanced;title=advanced;description=advanced;footer=advanced;is_automated=advanced;</experience_display_preferences>
+        <input_display_preferences>host=standard;message=standard;wait=standard;</input_display_preferences>
+        <inputs/>
+        <label>Ping Router</label>
+        <name>ping_host</name>
+        <outputs/>
+        <source>294bc0611bc1651028f9b7a5464bcb5f</source>
+        <source_type>sys_hub_flow</source_type>
+        <sys_class_name>sys_pd_activity_definition</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-15 21:12:18</sys_created_on>
+        <sys_id>820304ed1b41651028f9b7a5464bcbf7</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>Ping Router</sys_name>
+        <sys_package display_value="Execute Commands on Mid Server" source="59493655970a51d0b66fbd8c1253afba">59493655970a51d0b66fbd8c1253afba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
+        <sys_update_name>sys_pd_activity_definition_820304ed1b41651028f9b7a5464bcbf7</sys_update_name>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 22:17:06</sys_updated_on>
+        <system_level>false</system_level>
+        <table>global</table>
+        <type_vals/>
+        <type_vals/>
+        <wait_for_completion>true</wait_for_completion>
+    </sys_pd_activity_definition>
+    <sys_variable_value action="delete_multiple" query="document_key=820304ed1b41651028f9b7a5464bcbf7"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_pd_activity_definition</document>
+        <document_key>820304ed1b41651028f9b7a5464bcbf7</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-15 21:12:18</sys_created_on>
+        <sys_id>020304ed1b41651028f9b7a5464bcbfc</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 22:06:06</sys_updated_on>
+        <value>Instructional</value>
+        <variable display_value="Tagline">661d304673030010fe4a6da44cf6a7b1</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_pd_activity_definition</document>
+        <document_key>820304ed1b41651028f9b7a5464bcbf7</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-15 21:12:18</sys_created_on>
+        <sys_id>060304ed1b41651028f9b7a5464bcbfb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 21:12:18</sys_updated_on>
+        <value/>
+        <variable display_value="Associated Record">eb0474b8c763001085f5532bb4c260f5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_pd_activity_definition</document>
+        <document_key>820304ed1b41651028f9b7a5464bcbf7</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-15 21:12:18</sys_created_on>
+        <sys_id>0a0304ed1b41651028f9b7a5464bcbfa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 21:12:18</sys_updated_on>
+        <value>sys_flow_data</value>
+        <variable display_value="Associated Table">78f334b8c763001085f5532bb4c26009</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_pd_activity_definition</document>
+        <document_key>820304ed1b41651028f9b7a5464bcbf7</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-15 21:12:18</sys_created_on>
+        <sys_id>420304ed1b41651028f9b7a5464bcbfb</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 22:04:20</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Is Automated">ec5d96eac7e60010bfbaf89f51c2605d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_pd_activity_definition</document>
+        <document_key>820304ed1b41651028f9b7a5464bcbf7</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-15 21:12:18</sys_created_on>
+        <sys_id>460304ed1b41651028f9b7a5464bcbf8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 21:12:18</sys_updated_on>
+        <value>yes</value>
+        <variable display_value="Wait for user input">d6d1446d1b41651028f9b7a5464bcb36</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_pd_activity_definition</document>
+        <document_key>820304ed1b41651028f9b7a5464bcbf7</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-15 21:12:18</sys_created_on>
+        <sys_id>4e0304ed1b41651028f9b7a5464bcbfb</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 22:04:51</sys_updated_on>
+        <value>&lt;p&gt;{{vl.Ping Router./end.result}}&lt;/p&gt;</value>
+        <variable display_value="Description">267e68875b00001070e4492c11f91a34</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_pd_activity_definition</document>
+        <document_key>820304ed1b41651028f9b7a5464bcbf7</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-15 21:12:18</sys_created_on>
+        <sys_id>8a0304ed1b41651028f9b7a5464bcbfb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 21:12:18</sys_updated_on>
+        <value>analytics_center_outline</value>
+        <variable display_value="Icon">24bdf44673030010fe4a6da44cf6a707</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_pd_activity_definition</document>
+        <document_key>820304ed1b41651028f9b7a5464bcbf7</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-15 21:12:18</sys_created_on>
+        <sys_id>8e0304ed1b41651028f9b7a5464bcbf8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 21:12:18</sys_updated_on>
+        <value>localhost</value>
+        <variable display_value="Host">3d177b991b01651028f9b7a5464bcb29</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_pd_activity_definition</document>
+        <document_key>820304ed1b41651028f9b7a5464bcbf7</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-15 21:12:18</sys_created_on>
+        <sys_id>8e0304ed1b41651028f9b7a5464bcbfa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 21:12:18</sys_updated_on>
+        <value/>
+        <variable display_value="Footer">8793d6feb70100101a6ddb91de11a98f</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_pd_activity_definition</document>
+        <document_key>820304ed1b41651028f9b7a5464bcbf7</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-15 21:12:18</sys_created_on>
+        <sys_id>c20304ed1b41651028f9b7a5464bcbfc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 21:12:18</sys_updated_on>
+        <value>{{act.act_instance.label}}</value>
+        <variable display_value="Title">49ed24875b00001070e4492c11f91aa5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_pd_activity_definition</document>
+        <document_key>820304ed1b41651028f9b7a5464bcbf7</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-15 21:12:18</sys_created_on>
+        <sys_id>c60304ed1b41651028f9b7a5464bcbfb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 21:12:18</sys_updated_on>
+        <value>sys_flow_data</value>
+        <variable display_value="Experience Status Table">9c6b7e22c3211010381b60bc0eba8f98</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_pd_activity_definition</document>
+        <document_key>820304ed1b41651028f9b7a5464bcbf7</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-15 21:12:18</sys_created_on>
+        <sys_id>ca0304ed1b41651028f9b7a5464bcbfa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 21:12:18</sys_updated_on>
+        <value/>
+        <variable display_value="Experience Status Record">55628762c3211010381b60bc0eba8fec</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_input_294bc0611bc1651028f9b7a5464bcb5f^id=820304ed1b41651028f9b7a5464bcbf7"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_294bc0611bc1651028f9b7a5464bcb5f^id=820304ed1b41651028f9b7a5464bcbf7"/>
+    <sys_element_mapping action="delete_multiple" query="id=820304ed1b41651028f9b7a5464bcbf7"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>associated_record</field>
+        <id>820304ed1b41651028f9b7a5464bcbf7</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-15 21:16:38</sys_created_on>
+        <sys_id>b10484a11b81651028f9b7a5464bcb8f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 22:04:20</sys_updated_on>
+        <table>var__m_sys_pd_activity_type_prop_d4dde0875b00001070e4492c11f91a90</table>
+        <value>{{vl.Ping Router.e17e6678-8e97-4584-a903-cfa6e47fd378./end.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>associated_table</field>
+        <id>820304ed1b41651028f9b7a5464bcbf7</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-15 22:17:24</sys_created_on>
+        <sys_id>ffe114ad1bc1651028f9b7a5464bcb88</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 22:17:24</sys_updated_on>
+        <table>var__m_sys_pd_activity_type_prop_d4dde0875b00001070e4492c11f91a90</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>description</field>
+        <id>820304ed1b41651028f9b7a5464bcbf7</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-15 21:12:18</sys_created_on>
+        <sys_id>4a0304ed1b41651028f9b7a5464bcbfc</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 22:04:20</sys_updated_on>
+        <table>var__m_sys_pd_activity_type_prop_d4dde0875b00001070e4492c11f91a90</table>
+        <value>{{vl.Ping Router./end.result}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>experience_status_record</field>
+        <id>820304ed1b41651028f9b7a5464bcbf7</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-15 21:16:38</sys_created_on>
+        <sys_id>f90484a11b81651028f9b7a5464bcb8e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 22:04:20</sys_updated_on>
+        <table>var__m_sys_pd_activity_type_prop_d4dde0875b00001070e4492c11f91a90</table>
+        <value>{{vl.Ping Router.e17e6678-8e97-4584-a903-cfa6e47fd378./end.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>experience_status_table</field>
+        <id>820304ed1b41651028f9b7a5464bcbf7</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-15 22:17:24</sys_created_on>
+        <sys_id>fbe114ad1bc1651028f9b7a5464bcb89</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 22:17:24</sys_updated_on>
+        <table>var__m_sys_pd_activity_type_prop_d4dde0875b00001070e4492c11f91a90</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>footer</field>
+        <id>820304ed1b41651028f9b7a5464bcbf7</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-15 22:17:24</sys_created_on>
+        <sys_id>37e114ad1bc1651028f9b7a5464bcb89</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 22:17:24</sys_updated_on>
+        <table>var__m_sys_pd_activity_type_prop_d4dde0875b00001070e4492c11f91a90</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>icon</field>
+        <id>820304ed1b41651028f9b7a5464bcbf7</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-15 22:17:24</sys_created_on>
+        <sys_id>bfe114ad1bc1651028f9b7a5464bcb89</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 22:17:24</sys_updated_on>
+        <table>var__m_sys_pd_activity_type_prop_d4dde0875b00001070e4492c11f91a90</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>is_automated</field>
+        <id>820304ed1b41651028f9b7a5464bcbf7</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-15 21:37:26</sys_created_on>
+        <sys_id>aac8c06d1b81651028f9b7a5464bcbe6</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 22:06:29</sys_updated_on>
+        <table>var__m_sys_pd_activity_type_prop_d4dde0875b00001070e4492c11f91a90</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>message</field>
+        <id>820304ed1b41651028f9b7a5464bcbf7</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-15 22:17:24</sys_created_on>
+        <sys_id>77e114ad1bc1651028f9b7a5464bcb87</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 22:17:24</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_294bc0611bc1651028f9b7a5464bcb5f</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>tagline</field>
+        <id>820304ed1b41651028f9b7a5464bcbf7</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-15 22:04:51</sys_created_on>
+        <sys_id>481fcce51bc1651028f9b7a5464bcb5d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 22:04:51</sys_updated_on>
+        <table>var__m_sys_pd_activity_type_prop_d4dde0875b00001070e4492c11f91a90</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>title</field>
+        <id>820304ed1b41651028f9b7a5464bcbf7</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-15 21:12:18</sys_created_on>
+        <sys_id>0e0304ed1b41651028f9b7a5464bcbfc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 21:12:18</sys_updated_on>
+        <table>var__m_sys_pd_activity_type_prop_d4dde0875b00001070e4492c11f91a90</table>
+        <value>{{act.act_instance.label}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>wait</field>
+        <id>820304ed1b41651028f9b7a5464bcbf7</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-15 22:17:24</sys_created_on>
+        <sys_id>3fe114ad1bc1651028f9b7a5464bcb87</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 22:17:24</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_294bc0611bc1651028f9b7a5464bcb5f</table>
+        <value/>
+    </sys_element_mapping>
+</record_update>

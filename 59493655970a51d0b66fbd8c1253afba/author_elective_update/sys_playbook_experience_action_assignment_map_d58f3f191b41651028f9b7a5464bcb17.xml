@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_playbook_experience_action_assignment_map">
+    <sys_playbook_experience_action_assignment_map action="DELETE">
+        <activity_definition display_value="Speed Test">4ade7fd51b41651028f9b7a5464bcb3c</activity_definition>
+        <declarative_action_assignment display_value="skip_activity">8082dd18ff321010834953bd6338f1e9</declarative_action_assignment>
+        <playbook_experience display_value="Global Playbook Experience">98e09a560f2200102920c912d4767e1a</playbook_experience>
+        <sys_class_name>sys_playbook_experience_action_assignment_map</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-15 20:57:07</sys_created_on>
+        <sys_id>d58f3f191b41651028f9b7a5464bcb17</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Execute Commands on Mid Server" source="59493655970a51d0b66fbd8c1253afba">59493655970a51d0b66fbd8c1253afba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
+        <sys_update_name>sys_playbook_experience_action_assignment_map_d58f3f191b41651028f9b7a5464bcb17</sys_update_name>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 20:57:07</sys_updated_on>
+    </sys_playbook_experience_action_assignment_map>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</application>
+        <file_path/>
+        <instance_id>27284aaadbe4251091232f17d49619a9</instance_id>
+        <instance_name>italytelco</instance_name>
+        <name>sys_playbook_experience_action_assignment_map_d58f3f191b41651028f9b7a5464bcb17</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_playbook_experience_action_assignment_map"><sys_playbook_experience_action_assignment_map action="INSERT_OR_UPDATE"><activity_definition display_value="Speed Test">4ade7fd51b41651028f9b7a5464bcb3c</activity_definition><declarative_action_assignment display_value="skip_activity">8082dd18ff321010834953bd6338f1e9</declarative_action_assignment><playbook_experience display_value="Global Playbook Experience">98e09a560f2200102920c912d4767e1a</playbook_experience><sys_class_name>sys_playbook_experience_action_assignment_map</sys_class_name><sys_created_by>antonio</sys_created_by><sys_created_on>2023-02-15 20:57:07</sys_created_on><sys_id>d58f3f191b41651028f9b7a5464bcb17</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Execute Commands on Mid Server" source="59493655970a51d0b66fbd8c1253afba">59493655970a51d0b66fbd8c1253afba</sys_package><sys_policy/><sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope><sys_update_name>sys_playbook_experience_action_assignment_map_d58f3f191b41651028f9b7a5464bcb17</sys_update_name><sys_updated_by>antonio</sys_updated_by><sys_updated_on>2023-02-15 20:57:07</sys_updated_on></sys_playbook_experience_action_assignment_map></record_update>]]></payload>
+        <payload_hash>1886621867</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>5a60c3491b05e11028f9b7a5464bcb45</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-15 20:57:07</sys_created_on>
+        <sys_id>3f8fff191b41651028f9b7a5464bcb5e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18656dde3790000001</sys_recorded_at>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 20:57:07</sys_updated_on>
+        <type>Playbook Experience Action Assignment Ma</type>
+        <update_guid>378fff19c0416510323fd298edd17c5e</update_guid>
+        <update_guid_history>378fff19c0416510323fd298edd17c5e:1886621867</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-15 22:29:17</sys_created_on>
+        <sys_db_object display_value="" name="sys_playbook_experience_action_assignment_map">sys_playbook_experience_action_assignment_map</sys_db_object>
+        <sys_id>8072c84dfee149dd81bc10c136a99899</sys_id>
+        <sys_metadata>d58f3f191b41651028f9b7a5464bcb17</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Execute Commands on Mid Server" source="59493655970a51d0b66fbd8c1253afba">59493655970a51d0b66fbd8c1253afba</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
+        <sys_scope_delete display_value="">2aa3642b846043429621f9fb9e1e60b9</sys_scope_delete>
+        <sys_update_name>sys_playbook_experience_action_assignment_map_d58f3f191b41651028f9b7a5464bcb17</sys_update_name>
+        <sys_update_version display_value="sys_playbook_experience_action_assignment_map_d58f3f191b41651028f9b7a5464bcb17">3f8fff191b41651028f9b7a5464bcb5e</sys_update_version>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 22:29:17</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

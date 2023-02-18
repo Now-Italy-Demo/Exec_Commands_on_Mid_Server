@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_pd_activity_definition">
+    <sys_pd_activity_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <activity_type/>
+        <badge/>
+        <category/>
+        <description>Test if a host is live with ping</description>
+        <experience_display_preferences/>
+        <input_display_preferences/>
+        <inputs/>
+        <label>Test with Ping</label>
+        <name>test_with_ping</name>
+        <outputs/>
+        <source>59cdd3091bc5e11028f9b7a5464bcb8e</source>
+        <source_type>sys_hub_flow</source_type>
+        <sys_class_name>sys_pd_activity_definition</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-15 00:08:23</sys_created_on>
+        <sys_id>8191e3cd1bc5e11028f9b7a5464bcbea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Test with Ping</sys_name>
+        <sys_package display_value="Execute Commands on Mid Server" source="59493655970a51d0b66fbd8c1253afba">59493655970a51d0b66fbd8c1253afba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
+        <sys_update_name>sys_pd_activity_definition_8191e3cd1bc5e11028f9b7a5464bcbea</sys_update_name>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 00:08:23</sys_updated_on>
+        <system_level>false</system_level>
+        <table>global</table>
+        <type_vals/>
+        <wait_for_completion>true</wait_for_completion>
+    </sys_pd_activity_definition>
+    <sys_variable_value action="delete_multiple" query="document_key=8191e3cd1bc5e11028f9b7a5464bcbea"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_input_59cdd3091bc5e11028f9b7a5464bcb8e^id=8191e3cd1bc5e11028f9b7a5464bcbea"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_59cdd3091bc5e11028f9b7a5464bcb8e^id=8191e3cd1bc5e11028f9b7a5464bcbea"/>
+</record_update>

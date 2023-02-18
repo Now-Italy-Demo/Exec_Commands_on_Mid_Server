@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="wait" table="var__m_sys_hub_flow_input_876f930d1bc5e11028f9b7a5464bcb04" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>wait</element>
+            <name>var__m_sys_hub_flow_input_876f930d1bc5e11028f9b7a5464bcb04</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>antonio</sys_created_by>
+            <sys_created_on>2023-02-15 21:15:36</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name/>
+            <sys_package display_value="Execute Commands on Mid Server" source="59493655970a51d0b66fbd8c1253afba">59493655970a51d0b66fbd8c1253afba</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
+            <sys_update_name/>
+            <sys_updated_by>antonio</sys_updated_by>
+            <sys_updated_on>2023-02-15 21:15:36</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>wait</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>No</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_input_876f930d1bc5e11028f9b7a5464bcb04</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>antonio</sys_created_by>
+            <sys_created_on>2023-02-15 21:15:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e2c388611b81651028f9b7a5464bcb28</sys_id>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_updated_by>antonio</sys_updated_by>
+            <sys_updated_on>2023-02-15 21:35:49</sys_updated_on>
+            <value>no</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>wait</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Yes</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_input_876f930d1bc5e11028f9b7a5464bcb04</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>antonio</sys_created_by>
+            <sys_created_on>2023-02-15 21:15:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a6c388611b81651028f9b7a5464bcb36</sys_id>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_updated_by>antonio</sys_updated_by>
+            <sys_updated_on>2023-02-15 21:35:49</sys_updated_on>
+            <value>yes</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

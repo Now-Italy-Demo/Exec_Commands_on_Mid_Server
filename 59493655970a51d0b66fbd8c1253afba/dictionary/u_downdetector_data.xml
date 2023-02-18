@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="39f200791b49a51028f9b7a5464bcb73" label="Downdetector Data" max_length="40" name="u_downdetector_data" type="collection">
+        <element label="Down Graph" max_length="8000" name="u_down_graph" type="string"/>
+        <element label="Down Indicators" max_length="8000" name="u_down_indicators" type="string"/>
+        <element label="Down Map" max_length="8000" name="u_down_map" type="string"/>
+        <element label="JSON Data" max_length="10000" name="u_json_data" type="string"/>
+    </element>
+</database>

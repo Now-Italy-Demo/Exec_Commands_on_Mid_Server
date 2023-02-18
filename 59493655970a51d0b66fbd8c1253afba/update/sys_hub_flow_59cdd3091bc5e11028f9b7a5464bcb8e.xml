@@ -1,0 +1,2084 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Verify a host is alive with ping. Returns either "Alive" or "Dead"</description>
+        <internal_name>ping_host</internal_name>
+        <label_cache>[{"name":"subflow.wait","label":"Input➛Wait for user input","reference":"","reference_display":"","type":"choice","base_type":"choice","column_name":"","choices":[{"label":"No","value":"no","order":0.0},{"label":"Yes","value":"yes","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"faa9f315-eff5-4ac2-9b0a-e6201929930c","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"a52f51a2-fba6-4fa2-a669-2e28b32d5879.__dont_treat_as_error__","label":"1 - Create Flow Data➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"7bb61ebc-f0b6-4ea6-add7-81d43ed62a93"}},{"name":"a52f51a2-fba6-4fa2-a669-2e28b32d5879.__action_status__","label":"1 - Create Flow Data➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"b9ef666d-e49a-40d9-bf3e-8212f956c5d2"}},{"name":"a52f51a2-fba6-4fa2-a669-2e28b32d5879.record","label":"1 - Create Flow Data➛Record","reference":"sys_flow_data","reference_display":"Flow Data","type":"reference","base_type":"reference","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"a84140d4-4607-4e97-a968-ee79f23bf1e0"}},{"name":"subflow.host","label":"Input➛Host","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"d1e160e0-c23f-4df7-aad0-c635bda5113c","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"28dfeb73-f44f-4d2e-8a13-44adbfdeead3.result","label":"3 - Execute Shell Command➛Result","reference_display":"Result","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"da3d0907-5685-4155-b18c-a26ab81ad152"}},{"name":"28dfeb73-f44f-4d2e-8a13-44adbfdeead3.standard_error","label":"3 - Execute Shell Command➛Standard Error","reference_display":"Standard Error","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"3741a9aa-086a-43d8-9082-0dd18adfb993"}},{"name":"28dfeb73-f44f-4d2e-8a13-44adbfdeead3.standard_output","label":"3 - Execute Shell Command➛Standard Output","reference_display":"Standard Output","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"ed9bda38-2ca0-4595-ad50-3a4ef1d12c74"}},{"name":"28dfeb73-f44f-4d2e-8a13-44adbfdeead3.context","label":"3 - Execute Shell Command➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"17a5b5d1-d7a3-463b-9a51-45fbc54938a1.ecc_command_sysid","label":"2 - Run Command on MID➛Ecc Command SysID","reference_display":"Ecc Command SysID","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"1e5beddd-7672-4d6b-90b6-007129464793"}},{"name":"17a5b5d1-d7a3-463b-9a51-45fbc54938a1.stderr","label":"2 - Run Command on MID➛StdErr","reference_display":"StdErr","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"418d899d-f855-48b1-8bc3-6775b629adf6"}},{"name":"17a5b5d1-d7a3-463b-9a51-45fbc54938a1.stdout","label":"2 - Run Command on MID➛StdOut","reference_display":"StdOut","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"fea096fc-89f9-4685-b0b6-81ca9194a86e"}},{"name":"17a5b5d1-d7a3-463b-9a51-45fbc54938a1.__dont_treat_as_error__","label":"2 - Run Command on MID➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"5befe3bd-5278-431c-aac9-4643109de93f"}},{"name":"17a5b5d1-d7a3-463b-9a51-45fbc54938a1.__action_status__","label":"2 - Run Command on MID➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"35688d81-d62e-4b3a-8c6a-bd5b28aa681a"}},{"name":"17a5b5d1-d7a3-463b-9a51-45fbc54938a1.result","label":"2 - Run Command on MID➛Result","reference_display":"Result","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"2ef18442-0adf-4cbe-b065-1a041ddd66e1"}}]</label_cache>
+        <master_snapshot>876f930d1bc5e11028f9b7a5464bcb04</master_snapshot>
+        <name>Ping host</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-14 23:51:00</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>59cdd3091bc5e11028f9b7a5464bcb8e</sys_id>
+        <sys_mod_count>23</sys_mod_count>
+        <sys_name>Ping host</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Execute Commands on Mid Server" source="59493655970a51d0b66fbd8c1253afba">59493655970a51d0b66fbd8c1253afba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
+        <sys_update_name>sys_hub_flow_59cdd3091bc5e11028f9b7a5464bcb8e</sys_update_name>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 21:35:52</sys_updated_on>
+        <type>subflow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=59cdd3091bc5e11028f9b7a5464bcb8e"/>
+    <sys_variable_value action="delete_multiple" query="document_key=59cdd3091bc5e11028f9b7a5464bcb8e"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_59cdd3091bc5e11028f9b7a5464bcb8e^id=59cdd3091bc5e11028f9b7a5464bcb8e"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=59cdd3091bc5e11028f9b7a5464bcb8e"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=59cdd3091bc5e11028f9b7a5464bcb8e"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=59cdd3091bc5e11028f9b7a5464bcb8e^sys_idNOT INd1cdd3091bc5e11028f9b7a5464bcb8f"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>59cdd3091bc5e11028f9b7a5464bcb8e</id>
+        <name>Ping host</name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-14 23:51:01</sys_created_on>
+        <sys_id>d1cdd3091bc5e11028f9b7a5464bcb8f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-14 23:51:01</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=d1cdd3091bc5e11028f9b7a5464bcb8f"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=59cdd3091bc5e11028f9b7a5464bcb8e^sys_idNOT IN5ab304611b81651028f9b7a5464bcbc5,d69e57891bc5e11028f9b7a5464bcb45"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=choice,uiTypeLabel=Choice,uiUniqueId=faa9f315-eff5-4ac2-9b0a-e6201929930c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>3</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>yes</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>wait</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Choice">choice</internal_type>
+        <label>Wait for user input</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Ping host">59cdd3091bc5e11028f9b7a5464bcb8e</model>
+        <model_id>59cdd3091bc5e11028f9b7a5464bcb8e</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_59cdd3091bc5e11028f9b7a5464bcb8e</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-15 21:15:18</sys_created_on>
+        <sys_id>5ab304611b81651028f9b7a5464bcbc5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 21:15:18</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=d1e160e0-c23f-4df7-aad0-c635bda5113c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>localhost</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>host</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Host</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Ping host">59cdd3091bc5e11028f9b7a5464bcb8e</model>
+        <model_id>59cdd3091bc5e11028f9b7a5464bcb8e</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_59cdd3091bc5e11028f9b7a5464bcb8e</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-14 23:54:37</sys_created_on>
+        <sys_id>d69e57891bc5e11028f9b7a5464bcb45</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 20:36:08</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=59cdd3091bc5e11028f9b7a5464bcb8e^sys_idNOT IN804784691b81651028f9b7a5464bcbc3,9a9e57891bc5e11028f9b7a5464bcb4b"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=406a98e9-7d96-489d-ab67-0e2d0d319424</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>automated</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Automated</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Ping host">59cdd3091bc5e11028f9b7a5464bcb8e</model>
+        <model_id>59cdd3091bc5e11028f9b7a5464bcb8e</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_59cdd3091bc5e11028f9b7a5464bcb8e</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-15 21:30:43</sys_created_on>
+        <sys_id>804784691b81651028f9b7a5464bcbc3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 21:30:43</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=f71d5e26-dd1f-438a-ab03-3a3449039c96</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>result</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Result</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Ping host">59cdd3091bc5e11028f9b7a5464bcb8e</model>
+        <model_id>59cdd3091bc5e11028f9b7a5464bcb8e</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_59cdd3091bc5e11028f9b7a5464bcb8e</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-14 23:54:37</sys_created_on>
+        <sys_id>9a9e57891bc5e11028f9b7a5464bcb4b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 21:30:43</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=59cdd3091bc5e11028f9b7a5464bcb8e"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=59cdd3091bc5e11028f9b7a5464bcb8e^sys_idNOT INa2f648291b81651028f9b7a5464bcb5a"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Flow Data">99008a631b67001094630f28cc4bcb97</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Ping host">59cdd3091bc5e11028f9b7a5464bcb8e</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-15 21:29:32</sys_created_on>
+        <sys_id>a2f648291b81651028f9b7a5464bcb5a</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-02-15 21:40:04</sys_updated_on>
+        <ui_id>a52f51a2-fba6-4fa2-a669-2e28b32d5879</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=a2f648291b81651028f9b7a5464bcb5a"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a2f648291b81651028f9b7a5464bcb5a</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-15 21:29:32</sys_created_on>
+        <sys_id>22f648291b81651028f9b7a5464bcb5e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 21:29:32</sys_updated_on>
+        <value>04808edf1be7001094630f28cc4bcb6e</value>
+        <variable display_value="Definition">9d008a631b67001094630f28cc4bcb98</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a2f648291b81651028f9b7a5464bcb5a</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-15 21:29:32</sys_created_on>
+        <sys_id>2af648291b81651028f9b7a5464bcb5d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 21:29:32</sys_updated_on>
+        <value/>
+        <variable display_value="Wait for user input">ab311ae91b7b001094630f28cc4bcbbb</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=a2f648291b81651028f9b7a5464bcb5a"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>definition</field>
+        <id>a2f648291b81651028f9b7a5464bcb5a</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-15 21:29:32</sys_created_on>
+        <sys_id>a6f648291b81651028f9b7a5464bcb5d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 21:29:32</sys_updated_on>
+        <table>var__m_sys_hub_action_input_99008a631b67001094630f28cc4bcb97</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>wait</field>
+        <id>a2f648291b81651028f9b7a5464bcb5a</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-15 21:29:32</sys_created_on>
+        <sys_id>eef648291b81651028f9b7a5464bcb5c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 21:29:32</sys_updated_on>
+        <table>var__m_sys_hub_action_input_99008a631b67001094630f28cc4bcb97</table>
+        <value>{{subflow.wait}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=a2f648291b81651028f9b7a5464bcb5a^sys_idNOT IN62f648291b81651028f9b7a5464bcb5c"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>state</input_name>
+        <instance>a2f648291b81651028f9b7a5464bcb5a</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"state":{"scriptActive":true,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value.\n**Available options display upon pressing \".\" after fd_data\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\n\nreturn fd_data.subflow_inputs.wait \u003d\u003d \u0027yes\u0027 ? \u0027PENDING\u0027: \u0027COMPLETE\u0027;"}}</script>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-15 21:29:32</sys_created_on>
+        <sys_id>62f648291b81651028f9b7a5464bcb5c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 21:29:32</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=a2f648291b81651028f9b7a5464bcb5a"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=59cdd3091bc5e11028f9b7a5464bcb8e^sys_idNOT IN929e57891bc5e11028f9b7a5464bcb58"/>
+    <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Ping host">59cdd3091bc5e11028f9b7a5464bcb8e</flow>
+        <inputs/>
+        <inputs/>
+        <order>3</order>
+        <parent_ui_id>b49f9480-4170-4102-bb01-869b45c183bd</parent_ui_id>
+        <subflow display_value="Execute Shell Command">489d93091bc5e11028f9b7a5464bcb1f</subflow>
+        <subflow_instance_inputs/>
+        <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-14 23:54:38</sys_created_on>
+        <sys_id>929e57891bc5e11028f9b7a5464bcb58</sys_id>
+        <sys_mod_count>46</sys_mod_count>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 21:35:52</sys_updated_on>
+        <ui_id>28dfeb73-f44f-4d2e-8a13-44adbfdeead3</ui_id>
+    </sys_hub_sub_flow_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=929e57891bc5e11028f9b7a5464bcb58"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_sub_flow_instance</document>
+        <document_key>929e57891bc5e11028f9b7a5464bcb58</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-14 23:54:38</sys_created_on>
+        <sys_id>1a9e57891bc5e11028f9b7a5464bcb7b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-14 23:54:38</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Wait For Completion">9a9e57891bc5e11028f9b7a5464bcb59</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_sub_flow_instance</document>
+        <document_key>929e57891bc5e11028f9b7a5464bcb58</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-14 23:54:38</sys_created_on>
+        <sys_id>da9e57891bc5e11028f9b7a5464bcb7a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-14 23:54:38</sys_updated_on>
+        <value>0c63cb4d1b05e11028f9b7a5464bcb45</value>
+        <variable display_value="Mid Server">049d93091bc5e11028f9b7a5464bcb3c</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=929e57891bc5e11028f9b7a5464bcb58"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>command</field>
+        <id>929e57891bc5e11028f9b7a5464bcb58</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-14 23:54:38</sys_created_on>
+        <sys_id>5a9e57891bc5e11028f9b7a5464bcb7a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-14 23:54:38</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_489d93091bc5e11028f9b7a5464bcb1f</table>
+        <value>ping -qc 1 {{fd_transform:a0b716df-cace-4d76-82e5-2c978894fe7e}} &gt; /dev/null 2&gt;&amp;1; RC=$?; if [ $RC -eq 0 ]; then echo "Alive"; else echo "Dead"; fi</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>mid_server</field>
+        <id>929e57891bc5e11028f9b7a5464bcb58</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-14 23:54:38</sys_created_on>
+        <sys_id>969e57891bc5e11028f9b7a5464bcb7a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-14 23:54:38</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_489d93091bc5e11028f9b7a5464bcb1f</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>wait_for_completion</field>
+        <id>929e57891bc5e11028f9b7a5464bcb58</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-14 23:54:38</sys_created_on>
+        <sys_id>969e57891bc5e11028f9b7a5464bcb7b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-14 23:54:38</sys_updated_on>
+        <table>var__m_sys_hub_sub_flow_instance_inputs_929e57891bc5e11028f9b7a5464bcb58</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_929e57891bc5e11028f9b7a5464bcb58^id=929e57891bc5e11028f9b7a5464bcb58"/>
+    <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=929e57891bc5e11028f9b7a5464bcb58^sys_idNOT IN9a9e57891bc5e11028f9b7a5464bcb59"/>
+    <sys_hub_sub_flow_instance_inputs action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,fd_hide_inline_script_widget=true,uiType=boolean,uiTypeLabel=True/False</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>wait_for_completion</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Wait For Completion</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="">929e57891bc5e11028f9b7a5464bcb58</model>
+        <model_id>929e57891bc5e11028f9b7a5464bcb58</model_id>
+        <model_table>sys_hub_flow_logic_ext_input</model_table>
+        <name>var__m_sys_hub_sub_flow_instance_inputs_929e57891bc5e11028f9b7a5464bcb58</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_sub_flow_instance_inputs</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-14 23:54:38</sys_created_on>
+        <sys_id>9a9e57891bc5e11028f9b7a5464bcb59</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-14 23:54:38</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_sub_flow_instance_inputs>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=929e57891bc5e11028f9b7a5464bcb58"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=59cdd3091bc5e11028f9b7a5464bcb8e^sys_idNOT IN169e57891bc5e11028f9b7a5464bcb7c,b37740a91b81651028f9b7a5464bcbc4,d29e57891bc5e11028f9b7a5464bcb53"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">9e9e57891bc5e11028f9b7a5464bcb7b</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Ping host">59cdd3091bc5e11028f9b7a5464bcb8e</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>4</order>
+        <outputs_assigned>result</outputs_assigned>
+        <outputs_to_assign/>
+        <outputs_to_assign/>
+        <parent_ui_id>b49f9480-4170-4102-bb01-869b45c183bd</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-14 23:54:38</sys_created_on>
+        <sys_id>169e57891bc5e11028f9b7a5464bcb7c</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 21:35:52</sys_updated_on>
+        <ui_id>e06212da-f03c-4174-be81-5f70d4995ead</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=169e57891bc5e11028f9b7a5464bcb7c"/>
+    <sys_element_mapping action="delete_multiple" query="id=169e57891bc5e11028f9b7a5464bcb7c"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>result</field>
+        <id>169e57891bc5e11028f9b7a5464bcb7c</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-14 23:54:39</sys_created_on>
+        <sys_id>6a9e57891bc5e11028f9b7a5464bcb82</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 20:25:35</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_59cdd3091bc5e11028f9b7a5464bcb8e</table>
+        <value>&lt;pre&gt;Host {{fd_transform:74dab83a-361b-4357-8c09-3bff300dffa5}} appears to be &lt;b&gt;{{28dfeb73-f44f-4d2e-8a13-44adbfdeead3.standard_output}}&lt;/b&gt;&lt;/pre&gt;</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=169e57891bc5e11028f9b7a5464bcb7c"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=169e57891bc5e11028f9b7a5464bcb7c"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">b77740a91b81651028f9b7a5464bcbc3</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Ping host">59cdd3091bc5e11028f9b7a5464bcb8e</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>5</order>
+        <outputs_assigned>automated</outputs_assigned>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-15 21:31:48</sys_created_on>
+        <sys_id>b37740a91b81651028f9b7a5464bcbc4</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 21:35:52</sys_updated_on>
+        <ui_id>e98ff28f-01a0-4981-bda4-2d24314834ad</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=b37740a91b81651028f9b7a5464bcbc4"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_59cdd3091bc5e11028f9b7a5464bcb8e^id=b37740a91b81651028f9b7a5464bcbc4"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=b37740a91b81651028f9b7a5464bcbc4"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=b37740a91b81651028f9b7a5464bcbc4^sys_idNOT INff7740a91b81651028f9b7a5464bcbc4"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>automated</input_name>
+        <instance>b37740a91b81651028f9b7a5464bcbc4</instance>
+        <referenced_table>sys_hub_flow_logic</referenced_table>
+        <script>{"automated":{"scriptActive":true,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value.\n**Available options display upon pressing \".\" after fd_data\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\n\nreturn fd_data.subflow_inputs.wait!\u003d\u0027yes\u0027;"}}</script>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-15 21:31:48</sys_created_on>
+        <sys_id>ff7740a91b81651028f9b7a5464bcbc4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 21:31:48</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">1a9e57891bc5e11028f9b7a5464bcb52</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Ping host">59cdd3091bc5e11028f9b7a5464bcb8e</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-14 23:54:38</sys_created_on>
+        <sys_id>d29e57891bc5e11028f9b7a5464bcb53</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 21:35:52</sys_updated_on>
+        <ui_id>b49f9480-4170-4102-bb01-869b45c183bd</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=d29e57891bc5e11028f9b7a5464bcb53"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>d29e57891bc5e11028f9b7a5464bcb53</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-14 23:54:38</sys_created_on>
+        <sys_id>969e57891bc5e11028f9b7a5464bcb57</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-14 23:54:38</sys_updated_on>
+        <value>Host not empty</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=d29e57891bc5e11028f9b7a5464bcb53"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>d29e57891bc5e11028f9b7a5464bcb53</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-14 23:54:38</sys_created_on>
+        <sys_id>169e57891bc5e11028f9b7a5464bcb57</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-14 23:54:38</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{subflow.host}}!=</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>d29e57891bc5e11028f9b7a5464bcb53</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-14 23:54:38</sys_created_on>
+        <sys_id>5e9e57891bc5e11028f9b7a5464bcb56</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-14 23:54:38</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_59cdd3091bc5e11028f9b7a5464bcb8e^id=d29e57891bc5e11028f9b7a5464bcb53"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=d29e57891bc5e11028f9b7a5464bcb53"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=d29e57891bc5e11028f9b7a5464bcb53"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=59cdd3091bc5e11028f9b7a5464bcb8e^sys_idNOT IN2e9e57891bc5e11028f9b7a5464bcb84,4bde9f891bc5e11028f9b7a5464bcbf5,83de9f891bc5e11028f9b7a5464bcbf5,e29e57891bc5e11028f9b7a5464bcb85"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>59cdd3091bc5e11028f9b7a5464bcb8e</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{subflow.host}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-14 23:54:39</sys_created_on>
+        <sys_id>2e9e57891bc5e11028f9b7a5464bcb84</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-14 23:54:39</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>a0b716df-cace-4d76-82e5-2c978894fe7e</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>59cdd3091bc5e11028f9b7a5464bcb8e</attached_to>
+        <extra_info/>
+        <order>1</order>
+        <prescription/>
+        <source_ui_id>74dab83a-361b-4357-8c09-3bff300dffa5</source_ui_id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-14 23:55:47</sys_created_on>
+        <sys_id>4bde9f891bc5e11028f9b7a5464bcbf5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-14 23:55:47</sys_updated_on>
+        <transform_compositions>[{"id":"23fccf3dc7233300dbf8772bf4c260ac","transformType":null,"transformDefinition":null,"order":0,"parameters":[]}]</transform_compositions>
+        <transform_definition_id display_value="trim">dd9e9d44c7233300dbf8772bf4c2607a</transform_definition_id>
+        <ui_id>b74a3607-3123-4531-b779-95c0574ab5fe</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>59cdd3091bc5e11028f9b7a5464bcb8e</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{subflow.host}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-14 23:55:47</sys_created_on>
+        <sys_id>83de9f891bc5e11028f9b7a5464bcbf5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-14 23:55:47</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>74dab83a-361b-4357-8c09-3bff300dffa5</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>59cdd3091bc5e11028f9b7a5464bcb8e</attached_to>
+        <extra_info/>
+        <order>1</order>
+        <prescription/>
+        <source_ui_id>a0b716df-cace-4d76-82e5-2c978894fe7e</source_ui_id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-14 23:54:39</sys_created_on>
+        <sys_id>e29e57891bc5e11028f9b7a5464bcb85</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-14 23:54:39</sys_updated_on>
+        <transform_compositions>[{"id":"23fccf3dc7233300dbf8772bf4c260ac","transformType":null,"transformDefinition":null,"order":0,"parameters":[]}]</transform_compositions>
+        <transform_definition_id display_value="trim">dd9e9d44c7233300dbf8772bf4c2607a</transform_definition_id>
+        <ui_id>28e011ab-a3a2-46f8-a695-539faa4081fe</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=59cdd3091bc5e11028f9b7a5464bcb8e"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_59cdd3091bc5e11028f9b7a5464bcb8e^sys_idNOT IN52b304611b81651028f9b7a5464bcbcc,d29e57891bc5e11028f9b7a5464bcb49"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>wait</element>
+        <help/>
+        <hint/>
+        <label>Wait for user input</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_59cdd3091bc5e11028f9b7a5464bcb8e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-15 21:15:18</sys_created_on>
+        <sys_id>52b304611b81651028f9b7a5464bcbcc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Execute Commands on Mid Server" source="59493655970a51d0b66fbd8c1253afba">59493655970a51d0b66fbd8c1253afba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 21:15:18</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>host</element>
+        <help/>
+        <hint/>
+        <label>Host</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_59cdd3091bc5e11028f9b7a5464bcb8e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-14 23:54:37</sys_created_on>
+        <sys_id>d29e57891bc5e11028f9b7a5464bcb49</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Execute Commands on Mid Server" source="59493655970a51d0b66fbd8c1253afba">59493655970a51d0b66fbd8c1253afba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-14 23:54:37</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_59cdd3091bc5e11028f9b7a5464bcb8e^sys_idNOT INdeb304611b81651028f9b7a5464bcbc7,96b304611b81651028f9b7a5464bcbc8"/>
+    <sys_choice field="wait" table="var__m_sys_hub_flow_input_59cdd3091bc5e11028f9b7a5464bcb8e">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>wait</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>No</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_input_59cdd3091bc5e11028f9b7a5464bcb8e</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>antonio</sys_created_by>
+            <sys_created_on>2023-02-15 21:15:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>deb304611b81651028f9b7a5464bcbc7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>antonio</sys_updated_by>
+            <sys_updated_on>2023-02-15 21:15:18</sys_updated_on>
+            <value>no</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>wait</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Yes</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_input_59cdd3091bc5e11028f9b7a5464bcb8e</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>antonio</sys_created_by>
+            <sys_created_on>2023-02-15 21:15:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>96b304611b81651028f9b7a5464bcbc8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>antonio</sys_updated_by>
+            <sys_updated_on>2023-02-15 21:15:18</sys_updated_on>
+            <value>yes</value>
+        </sys_choice>
+    </sys_choice>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_59cdd3091bc5e11028f9b7a5464bcb8e^sys_idNOT IN404784691b81651028f9b7a5464bcbc7,929e57891bc5e11028f9b7a5464bcb4f"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>automated</element>
+        <help/>
+        <hint/>
+        <label>Automated</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_59cdd3091bc5e11028f9b7a5464bcb8e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-15 21:30:43</sys_created_on>
+        <sys_id>404784691b81651028f9b7a5464bcbc7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Execute Commands on Mid Server" source="59493655970a51d0b66fbd8c1253afba">59493655970a51d0b66fbd8c1253afba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 21:30:43</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>result</element>
+        <help/>
+        <hint/>
+        <label>Result</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_59cdd3091bc5e11028f9b7a5464bcb8e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-14 23:54:38</sys_created_on>
+        <sys_id>929e57891bc5e11028f9b7a5464bcb4f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Execute Commands on Mid Server" source="59493655970a51d0b66fbd8c1253afba">59493655970a51d0b66fbd8c1253afba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-14 23:54:38</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_59cdd3091bc5e11028f9b7a5464bcb8e"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=59cdd3091bc5e11028f9b7a5464bcb8e"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=59cdd3091bc5e11028f9b7a5464bcb8e^sys_idNOT IN5b6f930d1bc5e11028f9b7a5464bcb77"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"5b6f930d1bc5e11028f9b7a5464bcb77","name":"plan","plan_signature":null}}</plan>
+        <plan_id display_value="Ping host">59cdd3091bc5e11028f9b7a5464bcb8e</plan_id>
+        <snapshot>7c6904ad1b81651028f9b7a5464bcb81</snapshot>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-14 23:58:15</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5b6f930d1bc5e11028f9b7a5464bcb77</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 21:35:51</sys_updated_on>
+    </sys_flow_subflow_plan>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Verify a host is alive with ping. Returns either "Alive" or "Dead"</description>
+        <internal_name>ping_host</internal_name>
+        <label_cache>[{"name":"subflow.wait","label":"Input➛Wait for user input","reference":"","reference_display":"","type":"choice","base_type":"choice","column_name":"","choices":[{"label":"No","value":"no","order":0.0},{"label":"Yes","value":"yes","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"faa9f315-eff5-4ac2-9b0a-e6201929930c","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"a52f51a2-fba6-4fa2-a669-2e28b32d5879.__dont_treat_as_error__","label":"1 - Create Flow Data➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"7bb61ebc-f0b6-4ea6-add7-81d43ed62a93"}},{"name":"a52f51a2-fba6-4fa2-a669-2e28b32d5879.__action_status__","label":"1 - Create Flow Data➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"b9ef666d-e49a-40d9-bf3e-8212f956c5d2"}},{"name":"a52f51a2-fba6-4fa2-a669-2e28b32d5879.record","label":"1 - Create Flow Data➛Record","reference":"sys_flow_data","reference_display":"Flow Data","type":"reference","base_type":"reference","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"a84140d4-4607-4e97-a968-ee79f23bf1e0"}},{"name":"subflow.host","label":"Input➛Host","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"d1e160e0-c23f-4df7-aad0-c635bda5113c","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"28dfeb73-f44f-4d2e-8a13-44adbfdeead3.result","label":"3 - Execute Shell Command➛Result","reference_display":"Result","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"da3d0907-5685-4155-b18c-a26ab81ad152"}},{"name":"28dfeb73-f44f-4d2e-8a13-44adbfdeead3.standard_error","label":"3 - Execute Shell Command➛Standard Error","reference_display":"Standard Error","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"3741a9aa-086a-43d8-9082-0dd18adfb993"}},{"name":"28dfeb73-f44f-4d2e-8a13-44adbfdeead3.standard_output","label":"3 - Execute Shell Command➛Standard Output","reference_display":"Standard Output","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"ed9bda38-2ca0-4595-ad50-3a4ef1d12c74"}},{"name":"28dfeb73-f44f-4d2e-8a13-44adbfdeead3.context","label":"3 - Execute Shell Command➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"17a5b5d1-d7a3-463b-9a51-45fbc54938a1.ecc_command_sysid","label":"2 - Run Command on MID➛Ecc Command SysID","reference_display":"Ecc Command SysID","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"1e5beddd-7672-4d6b-90b6-007129464793"}},{"name":"17a5b5d1-d7a3-463b-9a51-45fbc54938a1.stderr","label":"2 - Run Command on MID➛StdErr","reference_display":"StdErr","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"418d899d-f855-48b1-8bc3-6775b629adf6"}},{"name":"17a5b5d1-d7a3-463b-9a51-45fbc54938a1.stdout","label":"2 - Run Command on MID➛StdOut","reference_display":"StdOut","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"fea096fc-89f9-4685-b0b6-81ca9194a86e"}},{"name":"17a5b5d1-d7a3-463b-9a51-45fbc54938a1.__dont_treat_as_error__","label":"2 - Run Command on MID➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"5befe3bd-5278-431c-aac9-4643109de93f"}},{"name":"17a5b5d1-d7a3-463b-9a51-45fbc54938a1.__action_status__","label":"2 - Run Command on MID➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"35688d81-d62e-4b3a-8c6a-bd5b28aa681a"}},{"name":"17a5b5d1-d7a3-463b-9a51-45fbc54938a1.result","label":"2 - Run Command on MID➛Result","reference_display":"Result","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"2ef18442-0adf-4cbe-b065-1a041ddd66e1"}}]</label_cache>
+        <master>true</master>
+        <name>Ping host</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Ping host">59cdd3091bc5e11028f9b7a5464bcb8e</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-14 23:58:13</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>876f930d1bc5e11028f9b7a5464bcb04</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 21:35:50</sys_updated_on>
+        <type>subflow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=876f930d1bc5e11028f9b7a5464bcb04"/>
+    <sys_variable_value action="delete_multiple" query="document_key=876f930d1bc5e11028f9b7a5464bcb04"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_876f930d1bc5e11028f9b7a5464bcb04^id=876f930d1bc5e11028f9b7a5464bcb04"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=876f930d1bc5e11028f9b7a5464bcb04"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=876f930d1bc5e11028f9b7a5464bcb04"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=876f930d1bc5e11028f9b7a5464bcb04^sys_idNOT INc76f930d1bc5e11028f9b7a5464bcb05"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>876f930d1bc5e11028f9b7a5464bcb04</id>
+        <name>Ping host</name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-14 23:58:13</sys_created_on>
+        <sys_id>c76f930d1bc5e11028f9b7a5464bcb05</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-14 23:58:13</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=c76f930d1bc5e11028f9b7a5464bcb05"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=876f930d1bc5e11028f9b7a5464bcb04^sys_idNOT IN8b6f930d1bc5e11028f9b7a5464bcb1f,aac388611b81651028f9b7a5464bcb24"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=d1e160e0-c23f-4df7-aad0-c635bda5113c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>localhost</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>host</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Host</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Ping host">876f930d1bc5e11028f9b7a5464bcb04</model>
+        <model_id>876f930d1bc5e11028f9b7a5464bcb04</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_876f930d1bc5e11028f9b7a5464bcb04</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-14 23:58:13</sys_created_on>
+        <sys_id>8b6f930d1bc5e11028f9b7a5464bcb1f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 20:36:46</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=choice,uiTypeLabel=Choice,uiUniqueId=faa9f315-eff5-4ac2-9b0a-e6201929930c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>3</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>yes</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>wait</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Choice">choice</internal_type>
+        <label>Wait for user input</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Ping host">876f930d1bc5e11028f9b7a5464bcb04</model>
+        <model_id>876f930d1bc5e11028f9b7a5464bcb04</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_876f930d1bc5e11028f9b7a5464bcb04</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-15 21:15:36</sys_created_on>
+        <sys_id>aac388611b81651028f9b7a5464bcb24</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 21:15:37</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=876f930d1bc5e11028f9b7a5464bcb04^sys_idNOT IN4f6f930d1bc5e11028f9b7a5464bcb2d,de68042d1b81651028f9b7a5464bcbb5"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=f71d5e26-dd1f-438a-ab03-3a3449039c96</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>result</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Result</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Ping host">876f930d1bc5e11028f9b7a5464bcb04</model>
+        <model_id>876f930d1bc5e11028f9b7a5464bcb04</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_output_876f930d1bc5e11028f9b7a5464bcb04</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-14 23:58:14</sys_created_on>
+        <sys_id>4f6f930d1bc5e11028f9b7a5464bcb2d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 21:35:48</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=406a98e9-7d96-489d-ab67-0e2d0d319424</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>automated</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Automated</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Ping host">876f930d1bc5e11028f9b7a5464bcb04</model>
+        <model_id>876f930d1bc5e11028f9b7a5464bcb04</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_output_876f930d1bc5e11028f9b7a5464bcb04</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-15 21:35:47</sys_created_on>
+        <sys_id>de68042d1b81651028f9b7a5464bcbb5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 21:35:47</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=876f930d1bc5e11028f9b7a5464bcb04"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=876f930d1bc5e11028f9b7a5464bcb04^sys_idNOT INda68042d1b81651028f9b7a5464bcbd4"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Flow Data">99008a631b67001094630f28cc4bcb97</action_type>
+        <action_type_parent display_value="Create Flow Data">8d3e35ef1b27001094630f28cc4bcb2a</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Ping host">876f930d1bc5e11028f9b7a5464bcb04</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-15 21:35:48</sys_created_on>
+        <sys_id>da68042d1b81651028f9b7a5464bcbd4</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 21:35:49</sys_updated_on>
+        <ui_id>a52f51a2-fba6-4fa2-a669-2e28b32d5879</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=da68042d1b81651028f9b7a5464bcbd4"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>da68042d1b81651028f9b7a5464bcbd4</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-15 21:35:48</sys_created_on>
+        <sys_id>1268042d1b81651028f9b7a5464bcbe4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 21:35:48</sys_updated_on>
+        <value/>
+        <variable display_value="Wait for user input">ab311ae91b7b001094630f28cc4bcbbb</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>da68042d1b81651028f9b7a5464bcbd4</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-15 21:35:48</sys_created_on>
+        <sys_id>1a68042d1b81651028f9b7a5464bcbe4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 21:35:48</sys_updated_on>
+        <value>04808edf1be7001094630f28cc4bcb6e</value>
+        <variable display_value="Definition">9d008a631b67001094630f28cc4bcb98</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=da68042d1b81651028f9b7a5464bcbd4"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>definition</field>
+        <id>da68042d1b81651028f9b7a5464bcbd4</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-15 21:35:48</sys_created_on>
+        <sys_id>9e68042d1b81651028f9b7a5464bcbe3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 21:35:48</sys_updated_on>
+        <table>var__m_sys_hub_action_input_99008a631b67001094630f28cc4bcb97</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>wait</field>
+        <id>da68042d1b81651028f9b7a5464bcbd4</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-15 21:35:48</sys_created_on>
+        <sys_id>d668042d1b81651028f9b7a5464bcbe3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 21:35:48</sys_updated_on>
+        <table>var__m_sys_hub_action_input_99008a631b67001094630f28cc4bcb97</table>
+        <value>{{subflow.wait}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=da68042d1b81651028f9b7a5464bcbd4^sys_idNOT INda68042d1b81651028f9b7a5464bcbe2"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>state</input_name>
+        <instance>da68042d1b81651028f9b7a5464bcbd4</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"state":{"scriptActive":true,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value.\n**Available options display upon pressing \".\" after fd_data\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\n\nreturn fd_data.subflow_inputs.wait \u003d\u003d \u0027yes\u0027 ? \u0027PENDING\u0027: \u0027COMPLETE\u0027;"}}</script>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-15 21:35:48</sys_created_on>
+        <sys_id>da68042d1b81651028f9b7a5464bcbe2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 21:35:48</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=da68042d1b81651028f9b7a5464bcbd4"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=876f930d1bc5e11028f9b7a5464bcb04^sys_idNOT IN9b6f930d1bc5e11028f9b7a5464bcb44"/>
+    <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Ping host">876f930d1bc5e11028f9b7a5464bcb04</flow>
+        <inputs/>
+        <inputs/>
+        <order>3</order>
+        <parent_ui_id>b49f9480-4170-4102-bb01-869b45c183bd</parent_ui_id>
+        <subflow display_value="Execute Shell Command">489d93091bc5e11028f9b7a5464bcb1f</subflow>
+        <subflow_instance_inputs/>
+        <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-14 23:58:14</sys_created_on>
+        <sys_id>9b6f930d1bc5e11028f9b7a5464bcb44</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 21:35:50</sys_updated_on>
+        <ui_id>28dfeb73-f44f-4d2e-8a13-44adbfdeead3</ui_id>
+    </sys_hub_sub_flow_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=9b6f930d1bc5e11028f9b7a5464bcb44"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_sub_flow_instance</document>
+        <document_key>9b6f930d1bc5e11028f9b7a5464bcb44</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-14 23:58:15</sys_created_on>
+        <sys_id>976f930d1bc5e11028f9b7a5464bcb60</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-14 23:58:15</sys_updated_on>
+        <value>0c63cb4d1b05e11028f9b7a5464bcb45</value>
+        <variable display_value="Mid Server">049d93091bc5e11028f9b7a5464bcb3c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_sub_flow_instance</document>
+        <document_key>9b6f930d1bc5e11028f9b7a5464bcb44</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-14 23:58:15</sys_created_on>
+        <sys_id>d36f930d1bc5e11028f9b7a5464bcb61</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-14 23:58:15</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Wait For Completion">9b6f930d1bc5e11028f9b7a5464bcb45</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=9b6f930d1bc5e11028f9b7a5464bcb44"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>command</field>
+        <id>9b6f930d1bc5e11028f9b7a5464bcb44</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-14 23:58:15</sys_created_on>
+        <sys_id>176f930d1bc5e11028f9b7a5464bcb60</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-14 23:58:15</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_489d93091bc5e11028f9b7a5464bcb1f</table>
+        <value>ping -qc 1 {{fd_transform:a0b716df-cace-4d76-82e5-2c978894fe7e}} &gt; /dev/null 2&gt;&amp;1; RC=$?; if [ $RC -eq 0 ]; then echo "Alive"; else echo "Dead"; fi</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>mid_server</field>
+        <id>9b6f930d1bc5e11028f9b7a5464bcb44</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-14 23:58:15</sys_created_on>
+        <sys_id>536f930d1bc5e11028f9b7a5464bcb60</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-14 23:58:15</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_489d93091bc5e11028f9b7a5464bcb1f</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>wait_for_completion</field>
+        <id>9b6f930d1bc5e11028f9b7a5464bcb44</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-14 23:58:15</sys_created_on>
+        <sys_id>536f930d1bc5e11028f9b7a5464bcb61</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-14 23:58:15</sys_updated_on>
+        <table>var__m_sys_hub_sub_flow_instance_inputs_9b6f930d1bc5e11028f9b7a5464bcb44</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_9b6f930d1bc5e11028f9b7a5464bcb44^id=9b6f930d1bc5e11028f9b7a5464bcb44"/>
+    <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=9b6f930d1bc5e11028f9b7a5464bcb44^sys_idNOT IN9b6f930d1bc5e11028f9b7a5464bcb45"/>
+    <sys_hub_sub_flow_instance_inputs action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,fd_hide_inline_script_widget=true,uiType=boolean,uiTypeLabel=True/False</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>wait_for_completion</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Wait For Completion</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="">9b6f930d1bc5e11028f9b7a5464bcb44</model>
+        <model_id>9b6f930d1bc5e11028f9b7a5464bcb44</model_id>
+        <model_table>sys_hub_flow_logic_ext_input</model_table>
+        <name>var__m_sys_hub_sub_flow_instance_inputs_9b6f930d1bc5e11028f9b7a5464bcb44</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_sub_flow_instance_inputs</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-14 23:58:14</sys_created_on>
+        <sys_id>9b6f930d1bc5e11028f9b7a5464bcb45</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-14 23:58:14</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_sub_flow_instance_inputs>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=9b6f930d1bc5e11028f9b7a5464bcb44"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=876f930d1bc5e11028f9b7a5464bcb04^sys_idNOT IN476f930d1bc5e11028f9b7a5464bcb39,4b6f930d1bc5e11028f9b7a5464bcb41,ea68042d1b81651028f9b7a5464bcbf4"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">1a9e57891bc5e11028f9b7a5464bcb52</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Ping host">876f930d1bc5e11028f9b7a5464bcb04</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-14 23:58:14</sys_created_on>
+        <sys_id>476f930d1bc5e11028f9b7a5464bcb39</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 21:35:49</sys_updated_on>
+        <ui_id>b49f9480-4170-4102-bb01-869b45c183bd</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=476f930d1bc5e11028f9b7a5464bcb39"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>476f930d1bc5e11028f9b7a5464bcb39</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-14 23:58:14</sys_created_on>
+        <sys_id>876f930d1bc5e11028f9b7a5464bcb40</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-14 23:58:14</sys_updated_on>
+        <value>Host not empty</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=476f930d1bc5e11028f9b7a5464bcb39"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>476f930d1bc5e11028f9b7a5464bcb39</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-14 23:58:14</sys_created_on>
+        <sys_id>076f930d1bc5e11028f9b7a5464bcb40</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-14 23:58:14</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{subflow.host}}!=</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>476f930d1bc5e11028f9b7a5464bcb39</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-14 23:58:14</sys_created_on>
+        <sys_id>4f6f930d1bc5e11028f9b7a5464bcb3f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-14 23:58:14</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_876f930d1bc5e11028f9b7a5464bcb04^id=476f930d1bc5e11028f9b7a5464bcb39"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=476f930d1bc5e11028f9b7a5464bcb39"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=476f930d1bc5e11028f9b7a5464bcb39"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">9e9e57891bc5e11028f9b7a5464bcb7b</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Ping host">876f930d1bc5e11028f9b7a5464bcb04</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>4</order>
+        <outputs_assigned>result</outputs_assigned>
+        <outputs_to_assign/>
+        <outputs_to_assign/>
+        <parent_ui_id>b49f9480-4170-4102-bb01-869b45c183bd</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-14 23:58:14</sys_created_on>
+        <sys_id>4b6f930d1bc5e11028f9b7a5464bcb41</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 21:35:50</sys_updated_on>
+        <ui_id>e06212da-f03c-4174-be81-5f70d4995ead</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=4b6f930d1bc5e11028f9b7a5464bcb41"/>
+    <sys_element_mapping action="delete_multiple" query="id=4b6f930d1bc5e11028f9b7a5464bcb41"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>result</field>
+        <id>4b6f930d1bc5e11028f9b7a5464bcb41</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-14 23:58:14</sys_created_on>
+        <sys_id>976f930d1bc5e11028f9b7a5464bcb44</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 20:25:43</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_876f930d1bc5e11028f9b7a5464bcb04</table>
+        <value>&lt;pre&gt;Host {{fd_transform:74dab83a-361b-4357-8c09-3bff300dffa5}} appears to be &lt;b&gt;{{28dfeb73-f44f-4d2e-8a13-44adbfdeead3.standard_output}}&lt;/b&gt;&lt;/pre&gt;</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=4b6f930d1bc5e11028f9b7a5464bcb41"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=4b6f930d1bc5e11028f9b7a5464bcb41"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">b77740a91b81651028f9b7a5464bcbc3</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Ping host">876f930d1bc5e11028f9b7a5464bcb04</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>5</order>
+        <outputs_assigned>automated</outputs_assigned>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-15 21:35:49</sys_created_on>
+        <sys_id>ea68042d1b81651028f9b7a5464bcbf4</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 21:35:50</sys_updated_on>
+        <ui_id>e98ff28f-01a0-4981-bda4-2d24314834ad</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=ea68042d1b81651028f9b7a5464bcbf4"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_876f930d1bc5e11028f9b7a5464bcb04^id=ea68042d1b81651028f9b7a5464bcbf4"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=ea68042d1b81651028f9b7a5464bcbf4"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=ea68042d1b81651028f9b7a5464bcbf4^sys_idNOT IN2a68042d1b81651028f9b7a5464bcbf5"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>automated</input_name>
+        <instance>ea68042d1b81651028f9b7a5464bcbf4</instance>
+        <referenced_table>sys_hub_flow_logic</referenced_table>
+        <script>{"automated":{"scriptActive":true,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value.\n**Available options display upon pressing \".\" after fd_data\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\n\nreturn fd_data.subflow_inputs.wait!\u003d\u0027yes\u0027;"}}</script>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-15 21:35:49</sys_created_on>
+        <sys_id>2a68042d1b81651028f9b7a5464bcbf5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 21:35:49</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=876f930d1bc5e11028f9b7a5464bcb04^sys_idNOT IN136f930d1bc5e11028f9b7a5464bcb62,1b6f930d1bc5e11028f9b7a5464bcb61,936f930d1bc5e11028f9b7a5464bcb62,9f6f930d1bc5e11028f9b7a5464bcb61"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>876f930d1bc5e11028f9b7a5464bcb04</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{subflow.host}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-14 23:58:15</sys_created_on>
+        <sys_id>136f930d1bc5e11028f9b7a5464bcb62</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-14 23:58:15</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>a0b716df-cace-4d76-82e5-2c978894fe7e</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>876f930d1bc5e11028f9b7a5464bcb04</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{subflow.host}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-14 23:58:15</sys_created_on>
+        <sys_id>1b6f930d1bc5e11028f9b7a5464bcb61</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-14 23:58:15</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>74dab83a-361b-4357-8c09-3bff300dffa5</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>876f930d1bc5e11028f9b7a5464bcb04</attached_to>
+        <extra_info/>
+        <order>1</order>
+        <prescription/>
+        <source_ui_id>74dab83a-361b-4357-8c09-3bff300dffa5</source_ui_id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-14 23:58:15</sys_created_on>
+        <sys_id>936f930d1bc5e11028f9b7a5464bcb62</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-14 23:58:15</sys_updated_on>
+        <transform_compositions>[{"id":"23fccf3dc7233300dbf8772bf4c260ac","transformType":null,"transformDefinition":null,"order":0,"parameters":[]}]</transform_compositions>
+        <transform_definition_id display_value="trim">dd9e9d44c7233300dbf8772bf4c2607a</transform_definition_id>
+        <ui_id>b74a3607-3123-4531-b779-95c0574ab5fe</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>876f930d1bc5e11028f9b7a5464bcb04</attached_to>
+        <extra_info/>
+        <order>1</order>
+        <prescription/>
+        <source_ui_id>a0b716df-cace-4d76-82e5-2c978894fe7e</source_ui_id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-14 23:58:15</sys_created_on>
+        <sys_id>9f6f930d1bc5e11028f9b7a5464bcb61</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-14 23:58:15</sys_updated_on>
+        <transform_compositions>[{"id":"23fccf3dc7233300dbf8772bf4c260ac","transformType":null,"transformDefinition":null,"order":0,"parameters":[]}]</transform_compositions>
+        <transform_definition_id display_value="trim">dd9e9d44c7233300dbf8772bf4c2607a</transform_definition_id>
+        <ui_id>28e011ab-a3a2-46f8-a695-539faa4081fe</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=876f930d1bc5e11028f9b7a5464bcb04"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_876f930d1bc5e11028f9b7a5464bcb04^sys_idNOT IN4f6f930d1bc5e11028f9b7a5464bcb28,b6c388611b81651028f9b7a5464bcb3c"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>host</element>
+        <help/>
+        <hint/>
+        <label>Host</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_876f930d1bc5e11028f9b7a5464bcb04</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-14 23:58:14</sys_created_on>
+        <sys_id>4f6f930d1bc5e11028f9b7a5464bcb28</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Execute Commands on Mid Server" source="59493655970a51d0b66fbd8c1253afba">59493655970a51d0b66fbd8c1253afba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-14 23:58:14</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>wait</element>
+        <help/>
+        <hint/>
+        <label>Wait for user input</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_876f930d1bc5e11028f9b7a5464bcb04</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-15 21:15:37</sys_created_on>
+        <sys_id>b6c388611b81651028f9b7a5464bcb3c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Execute Commands on Mid Server" source="59493655970a51d0b66fbd8c1253afba">59493655970a51d0b66fbd8c1253afba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 21:15:37</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_876f930d1bc5e11028f9b7a5464bcb04^sys_idNOT INe2c388611b81651028f9b7a5464bcb28,a6c388611b81651028f9b7a5464bcb36"/>
+    <sys_choice field="wait" table="var__m_sys_hub_flow_input_876f930d1bc5e11028f9b7a5464bcb04">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>wait</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>No</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_input_876f930d1bc5e11028f9b7a5464bcb04</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>antonio</sys_created_by>
+            <sys_created_on>2023-02-15 21:15:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e2c388611b81651028f9b7a5464bcb28</sys_id>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_updated_by>antonio</sys_updated_by>
+            <sys_updated_on>2023-02-15 21:35:49</sys_updated_on>
+            <value>no</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>wait</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Yes</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_input_876f930d1bc5e11028f9b7a5464bcb04</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>antonio</sys_created_by>
+            <sys_created_on>2023-02-15 21:15:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a6c388611b81651028f9b7a5464bcb36</sys_id>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_updated_by>antonio</sys_updated_by>
+            <sys_updated_on>2023-02-15 21:35:49</sys_updated_on>
+            <value>yes</value>
+        </sys_choice>
+    </sys_choice>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_876f930d1bc5e11028f9b7a5464bcb04^sys_idNOT IN476f930d1bc5e11028f9b7a5464bcb33,9a68042d1b81651028f9b7a5464bcbbb"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>result</element>
+        <help/>
+        <hint/>
+        <label>Result</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_876f930d1bc5e11028f9b7a5464bcb04</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-14 23:58:14</sys_created_on>
+        <sys_id>476f930d1bc5e11028f9b7a5464bcb33</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Execute Commands on Mid Server" source="59493655970a51d0b66fbd8c1253afba">59493655970a51d0b66fbd8c1253afba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-14 23:58:14</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>automated</element>
+        <help/>
+        <hint/>
+        <label>Automated</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_876f930d1bc5e11028f9b7a5464bcb04</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-15 21:35:47</sys_created_on>
+        <sys_id>9a68042d1b81651028f9b7a5464bcbbb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Execute Commands on Mid Server" source="59493655970a51d0b66fbd8c1253afba">59493655970a51d0b66fbd8c1253afba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-15 21:35:47</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_876f930d1bc5e11028f9b7a5464bcb04"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>59cdd3091bc5e11028f9b7a5464bcb8e</sys_id>
+        <latest_snapshot>876f930d1bc5e11028f9b7a5464bcb04</latest_snapshot>
+        <compiler_build>glide-tokyo-07-08-2022__patch4-11-23-2022_12-05-2022_2132.zip</compiler_build>
+    </sys_hub_flow>
+</record_update>

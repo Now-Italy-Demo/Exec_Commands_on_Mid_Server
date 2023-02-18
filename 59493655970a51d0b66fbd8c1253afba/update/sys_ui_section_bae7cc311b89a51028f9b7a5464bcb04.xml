@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="bae7cc311b89a51028f9b7a5464bcb04" sys_domain="global" table="u_downdetector_data" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_down_graph</element>
+            <position>0</position>
+            <sys_created_by>antonio</sys_created_by>
+            <sys_created_on>2023-02-16 16:12:07</sys_created_on>
+            <sys_id>7ee7cc311b89a51028f9b7a5464bcb09</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_downdetector_data" sys_domain="global" view="Default view">bae7cc311b89a51028f9b7a5464bcb04</sys_ui_section>
+            <sys_updated_by>antonio</sys_updated_by>
+            <sys_updated_on>2023-02-16 16:12:07</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_down_indicators</element>
+            <position>1</position>
+            <sys_created_by>antonio</sys_created_by>
+            <sys_created_on>2023-02-16 16:12:07</sys_created_on>
+            <sys_id>b6e7cc311b89a51028f9b7a5464bcb0a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_downdetector_data" sys_domain="global" view="Default view">bae7cc311b89a51028f9b7a5464bcb04</sys_ui_section>
+            <sys_updated_by>antonio</sys_updated_by>
+            <sys_updated_on>2023-02-16 16:12:07</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_json_data</element>
+            <position>2</position>
+            <sys_created_by>antonio</sys_created_by>
+            <sys_created_on>2023-02-16 16:12:07</sys_created_on>
+            <sys_id>bae7cc311b89a51028f9b7a5464bcb0a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_downdetector_data" sys_domain="global" view="Default view">bae7cc311b89a51028f9b7a5464bcb04</sys_ui_section>
+            <sys_updated_by>antonio</sys_updated_by>
+            <sys_updated_on>2023-02-16 16:12:07</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_down_map</element>
+            <position>3</position>
+            <sys_created_by>antonio</sys_created_by>
+            <sys_created_on>2023-02-18 09:10:51</sys_created_on>
+            <sys_id>87aa341e8749a110efbf646e8bbb35b1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_downdetector_data" sys_domain="global" view="Default view">bae7cc311b89a51028f9b7a5464bcb04</sys_ui_section>
+            <sys_updated_by>antonio</sys_updated_by>
+            <sys_updated_on>2023-02-18 09:10:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>u_downdetector_data</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>antonio</sys_created_by>
+            <sys_created_on>2023-02-16 16:12:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bae7cc311b89a51028f9b7a5464bcb04</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>u_downdetector_data</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Execute Commands on Mid Server" source="59493655970a51d0b66fbd8c1253afba">59493655970a51d0b66fbd8c1253afba</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
+            <sys_update_name>sys_ui_section_bae7cc311b89a51028f9b7a5464bcb04</sys_update_name>
+            <sys_updated_by>antonio</sys_updated_by>
+            <sys_updated_on>2023-02-16 16:12:07</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

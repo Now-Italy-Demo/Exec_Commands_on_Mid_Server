@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route">
+    <sys_ux_app_route action="INSERT_OR_UPDATE">
+        <app_config display_value="Advanced Dashboards">02dc36706f01011089060168e25b3691</app_config>
+        <description/>
+        <extension_point/>
+        <fields/>
+        <icon/>
+        <name>Downdetector</name>
+        <optional_parameters/>
+        <order>0</order>
+        <parent_macroponent display_value="UXR Base Experience Shell - Advanced">47bcb58553030110aab9ddeeff7b12c2</parent_macroponent>
+        <parent_macroponent_composition_element_id/>
+        <route_type>downdetector-1626740055</route_type>
+        <screen_type display_value="Downdetector">ad021d311b41e51028f9b7a5464bcbb7</screen_type>
+        <sys_class_name>sys_ux_app_route</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-16 21:35:54</sys_created_on>
+        <sys_id>b9021d311b41e51028f9b7a5464bcbd4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Downdetector</sys_name>
+        <sys_package display_value="Execute Commands on Mid Server" source="59493655970a51d0b66fbd8c1253afba">59493655970a51d0b66fbd8c1253afba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
+        <sys_update_name>sys_ux_app_route_b9021d311b41e51028f9b7a5464bcbd4</sys_update_name>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-16 21:35:54</sys_updated_on>
+    </sys_ux_app_route>
+    <sys_translated_text action="delete_multiple" query="documentkey=b9021d311b41e51028f9b7a5464bcbd4"/>
+</record_update>

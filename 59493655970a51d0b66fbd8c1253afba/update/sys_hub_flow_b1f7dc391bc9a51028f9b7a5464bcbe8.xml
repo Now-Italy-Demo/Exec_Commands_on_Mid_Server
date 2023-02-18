@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Runs job to extract data from Downdetector</description>
+        <internal_name>update_from_downdetector</internal_name>
+        <label_cache>[{"name":"e4b0474e-a7d1-4d14-8db4-e0b247e3cab9.result","label":"1 - Run Command on MID➛Result","reference_display":"Result","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"2ef18442-0adf-4cbe-b065-1a041ddd66e1"}},{"name":"e4b0474e-a7d1-4d14-8db4-e0b247e3cab9.__action_status__","label":"1 - Run Command on MID➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"35688d81-d62e-4b3a-8c6a-bd5b28aa681a"}},{"name":"e4b0474e-a7d1-4d14-8db4-e0b247e3cab9.__dont_treat_as_error__","label":"1 - Run Command on MID➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"5befe3bd-5278-431c-aac9-4643109de93f"}},{"name":"e4b0474e-a7d1-4d14-8db4-e0b247e3cab9.stdout","label":"1 - Run Command on MID➛StdOut","reference_display":"StdOut","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"fea096fc-89f9-4685-b0b6-81ca9194a86e"}},{"name":"e4b0474e-a7d1-4d14-8db4-e0b247e3cab9.stderr","label":"1 - Run Command on MID➛StdErr","reference_display":"StdErr","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"418d899d-f855-48b1-8bc3-6775b629adf6"}},{"name":"e4b0474e-a7d1-4d14-8db4-e0b247e3cab9.ecc_command_sysid","label":"1 - Run Command on MID➛Ecc Command SysID","reference_display":"Ecc Command SysID","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"1e5beddd-7672-4d6b-90b6-007129464793"}}]</label_cache>
+        <master_snapshot>3619d0f91bc9a51028f9b7a5464bcb34</master_snapshot>
+        <name>Update from Downdetector</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>4f19d0f91bc9a51028f9b7a5464bcb64</remote_trigger_id>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-16 17:22:14</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b1f7dc391bc9a51028f9b7a5464bcbe8</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>Update from Downdetector</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Execute Commands on Mid Server" source="59493655970a51d0b66fbd8c1253afba">59493655970a51d0b66fbd8c1253afba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
+        <sys_update_name>sys_hub_flow_b1f7dc391bc9a51028f9b7a5464bcbe8</sys_update_name>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-16 18:34:32</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=b1f7dc391bc9a51028f9b7a5464bcbe8"/>
+    <sys_variable_value action="delete_multiple" query="document_key=b1f7dc391bc9a51028f9b7a5464bcbe8"/>
+    <sys_flow_timer_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <day_of_month>1</day_of_month>
+        <day_of_week/>
+        <name/>
+        <run_period>1970-01-01 00:20:00</run_period>
+        <run_start/>
+        <sys_class_name>sys_flow_timer_trigger</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-16 17:27:14</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4f19d0f91bc9a51028f9b7a5464bcb64</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-16 18:34:32</sys_updated_on>
+        <time/>
+        <timer_type>1</timer_type>
+    </sys_flow_timer_trigger>
+    <sys_flow_trigger_auto_script action="delete_multiple" query="name=Trigger:4f19d0f91bc9a51028f9b7a5464bcb64^sys_idNOT IN0719d0f91bc9a51028f9b7a5464bcb65"/>
+    <sys_flow_trigger_auto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time/>
+        <name>Trigger:4f19d0f91bc9a51028f9b7a5464bcb64</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <run_as display_value="Antonio Rizzi">ed159edb87b0ed506afa65f30cbb3528</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek/>
+        <run_period>1970-01-01 00:20:00</run_period>
+        <run_start/>
+        <run_time/>
+        <run_type>periodically</run_type>
+        <script><![CDATA[sn_flow_trigger.FlowTriggerAPI.fireTimerTrigger('4f19d0f91bc9a51028f9b7a5464bcb64');]]></script>
+        <sys_class_name>sys_flow_trigger_auto_script</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-16 17:27:14</sys_created_on>
+        <sys_id>0719d0f91bc9a51028f9b7a5464bcb65</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-16 18:34:32</sys_updated_on>
+        <time_zone/>
+        <trigger display_value="">4f19d0f91bc9a51028f9b7a5464bcb64</trigger>
+        <upgrade_safe>true</upgrade_safe>
+    </sys_flow_trigger_auto_script>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=b1f7dc391bc9a51028f9b7a5464bcbe8"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=b1f7dc391bc9a51028f9b7a5464bcbe8^sys_idNOT IN8c5898791bc9a51028f9b7a5464bcbe6"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Update from Downdetector">b1f7dc391bc9a51028f9b7a5464bcbe8</flow>
+        <name>Repeat</name>
+        <remote_sys_id/>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-16 17:23:45</sys_created_on>
+        <sys_id>8c5898791bc9a51028f9b7a5464bcbe6</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-16 18:34:32</sys_updated_on>
+        <trigger_definition display_value="Repeat">f63f0d94c32222002841b63b12d3aeed</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>repeat</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=8c5898791bc9a51028f9b7a5464bcbe6"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>8c5898791bc9a51028f9b7a5464bcbe6</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-16 17:23:45</sys_created_on>
+        <sys_id>085898791bc9a51028f9b7a5464bcbe8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-16 17:23:45</sys_updated_on>
+        <value>1970-01-01 00:20:00</value>
+        <variable display_value="Repeat">1c5f4d94c32222002841b63b12d3aeb3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_input_f63f0d94c32222002841b63b12d3aeed^id=8c5898791bc9a51028f9b7a5464bcbe6"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=b1f7dc391bc9a51028f9b7a5464bcbe8"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=b1f7dc391bc9a51028f9b7a5464bcbe8^sys_idNOT INf1f7dc391bc9a51028f9b7a5464bcbea"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>b1f7dc391bc9a51028f9b7a5464bcbe8</id>
+        <name>Update from Downdetector</name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-16 17:22:14</sys_created_on>
+        <sys_id>f1f7dc391bc9a51028f9b7a5464bcbea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-16 17:22:14</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=f1f7dc391bc9a51028f9b7a5464bcbea"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=b1f7dc391bc9a51028f9b7a5464bcbe8"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=b1f7dc391bc9a51028f9b7a5464bcbe8"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b1f7dc391bc9a51028f9b7a5464bcbe8"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=b1f7dc391bc9a51028f9b7a5464bcbe8^sys_idNOT INb09814b91bc9a51028f9b7a5464bcbe0"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Run Command on MID">b90ca31c47ce19903d45b18c346d4300</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Update from Downdetector">b1f7dc391bc9a51028f9b7a5464bcbe8</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-16 17:24:53</sys_created_on>
+        <sys_id>b09814b91bc9a51028f9b7a5464bcbe0</sys_id>
+        <sys_mod_count>30</sys_mod_count>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-02-16 18:54:35</sys_updated_on>
+        <ui_id>e4b0474e-a7d1-4d14-8db4-e0b247e3cab9</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=b09814b91bc9a51028f9b7a5464bcbe0"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b09814b91bc9a51028f9b7a5464bcbe0</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-16 17:24:54</sys_created_on>
+        <sys_id>749814b91bc9a51028f9b7a5464bcbe3</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-16 18:05:51</sys_updated_on>
+        <value>timeout -k 1 300 /bin/bash -c "/home/ubuntu/run_dd.sh"</value>
+        <variable display_value="Command">350ca31c47ce19903d45b18c346d430c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b09814b91bc9a51028f9b7a5464bcbe0</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-16 17:24:54</sys_created_on>
+        <sys_id>b09814b91bc9a51028f9b7a5464bcbe3</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-16 18:32:10</sys_updated_on>
+        <value>330</value>
+        <variable display_value="Execution Timeout">4cb61cbd974ad1d0b66fbd8c1253afca</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b09814b91bc9a51028f9b7a5464bcbe0</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-16 17:58:09</sys_created_on>
+        <sys_id>b3202cf51b0da51028f9b7a5464bcb0e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-16 17:58:09</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Run asynchronously">bd0ca31c47ce19903d45b18c346d4310</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b09814b91bc9a51028f9b7a5464bcbe0</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-16 17:24:54</sys_created_on>
+        <sys_id>fc9814b91bc9a51028f9b7a5464bcbe2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-16 17:24:54</sys_updated_on>
+        <value>0c63cb4d1b05e11028f9b7a5464bcb45</value>
+        <variable display_value="Mid Server">b10ca31c47ce19903d45b18c346d4304</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_b90ca31c47ce19903d45b18c346d4300^id=b09814b91bc9a51028f9b7a5464bcbe0"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=b09814b91bc9a51028f9b7a5464bcbe0^sys_idNOT IN027a54bd1bc9a51028f9b7a5464bcbe0"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>run_asynchronously</input_name>
+        <instance>b09814b91bc9a51028f9b7a5464bcbe0</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"run_asynchronously":{"scriptActive":true,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value.\n**Available options display upon pressing \".\" after fd_data\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\n\nvar run_asynchronously \u003d \u0027false\u0027;\nreturn run_asynchronously;"}}</script>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-16 17:33:11</sys_created_on>
+        <sys_id>027a54bd1bc9a51028f9b7a5464bcbe0</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-16 18:32:10</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b09814b91bc9a51028f9b7a5464bcbe0"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=b1f7dc391bc9a51028f9b7a5464bcbe8"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=b1f7dc391bc9a51028f9b7a5464bcbe8"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=b1f7dc391bc9a51028f9b7a5464bcbe8"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=b1f7dc391bc9a51028f9b7a5464bcbe8"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_b1f7dc391bc9a51028f9b7a5464bcbe8"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_b1f7dc391bc9a51028f9b7a5464bcbe8"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_b1f7dc391bc9a51028f9b7a5464bcbe8"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_b1f7dc391bc9a51028f9b7a5464bcbe8"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=b1f7dc391bc9a51028f9b7a5464bcbe8^sys_idNOT IN4f19d0f91bc9a51028f9b7a5464bcb66"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"4f19d0f91bc9a51028f9b7a5464bcb66","name":"plan","plan_signature":null}}</plan>
+        <plan_id>b1f7dc391bc9a51028f9b7a5464bcbe8</plan_id>
+        <snapshot>ee1d20f91b4da51028f9b7a5464bcb0b</snapshot>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-16 17:27:14</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4f19d0f91bc9a51028f9b7a5464bcb66</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-16 18:34:32</sys_updated_on>
+        <trigger display_value="">4f19d0f91bc9a51028f9b7a5464bcb64</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=b1f7dc391bc9a51028f9b7a5464bcbe8"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Runs job to extract data from Downdetector</description>
+        <internal_name>update_from_downdetector</internal_name>
+        <label_cache>[{"name":"e4b0474e-a7d1-4d14-8db4-e0b247e3cab9.result","label":"1 - Run Command on MID➛Result","reference_display":"Result","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"2ef18442-0adf-4cbe-b065-1a041ddd66e1"}},{"name":"e4b0474e-a7d1-4d14-8db4-e0b247e3cab9.__action_status__","label":"1 - Run Command on MID➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"35688d81-d62e-4b3a-8c6a-bd5b28aa681a"}},{"name":"e4b0474e-a7d1-4d14-8db4-e0b247e3cab9.__dont_treat_as_error__","label":"1 - Run Command on MID➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"5befe3bd-5278-431c-aac9-4643109de93f"}},{"name":"e4b0474e-a7d1-4d14-8db4-e0b247e3cab9.stdout","label":"1 - Run Command on MID➛StdOut","reference_display":"StdOut","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"fea096fc-89f9-4685-b0b6-81ca9194a86e"}},{"name":"e4b0474e-a7d1-4d14-8db4-e0b247e3cab9.stderr","label":"1 - Run Command on MID➛StdErr","reference_display":"StdErr","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"418d899d-f855-48b1-8bc3-6775b629adf6"}},{"name":"e4b0474e-a7d1-4d14-8db4-e0b247e3cab9.ecc_command_sysid","label":"1 - Run Command on MID➛Ecc Command SysID","reference_display":"Ecc Command SysID","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"1e5beddd-7672-4d6b-90b6-007129464793"}}]</label_cache>
+        <master>true</master>
+        <name>Update from Downdetector</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Update from Downdetector">b1f7dc391bc9a51028f9b7a5464bcbe8</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-16 17:27:13</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3619d0f91bc9a51028f9b7a5464bcb34</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-16 18:34:31</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=3619d0f91bc9a51028f9b7a5464bcb34"/>
+    <sys_variable_value action="delete_multiple" query="document_key=3619d0f91bc9a51028f9b7a5464bcb34"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=3619d0f91bc9a51028f9b7a5464bcb34^sys_idNOT IN7a19d0f91bc9a51028f9b7a5464bcb44"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Update from Downdetector">3619d0f91bc9a51028f9b7a5464bcb34</flow>
+        <name>Repeat</name>
+        <remote_sys_id/>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-16 17:27:13</sys_created_on>
+        <sys_id>7a19d0f91bc9a51028f9b7a5464bcb44</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-16 18:34:32</sys_updated_on>
+        <trigger_definition display_value="Repeat">f63f0d94c32222002841b63b12d3aeed</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>repeat</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=7a19d0f91bc9a51028f9b7a5464bcb44"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>7a19d0f91bc9a51028f9b7a5464bcb44</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-16 17:27:13</sys_created_on>
+        <sys_id>f619d0f91bc9a51028f9b7a5464bcb45</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-16 17:27:13</sys_updated_on>
+        <value>1970-01-01 00:20:00</value>
+        <variable display_value="Repeat">1c5f4d94c32222002841b63b12d3aeb3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_input_f63f0d94c32222002841b63b12d3aeed^id=7a19d0f91bc9a51028f9b7a5464bcb44"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=3619d0f91bc9a51028f9b7a5464bcb34"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=3619d0f91bc9a51028f9b7a5464bcb34^sys_idNOT IN3619d0f91bc9a51028f9b7a5464bcb35"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>3619d0f91bc9a51028f9b7a5464bcb34</id>
+        <name>Update from Downdetector</name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-16 17:27:13</sys_created_on>
+        <sys_id>3619d0f91bc9a51028f9b7a5464bcb35</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-16 17:27:13</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=3619d0f91bc9a51028f9b7a5464bcb35"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=3619d0f91bc9a51028f9b7a5464bcb34"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=3619d0f91bc9a51028f9b7a5464bcb34"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=3619d0f91bc9a51028f9b7a5464bcb34"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=3619d0f91bc9a51028f9b7a5464bcb34^sys_idNOT IN3219d0f91bc9a51028f9b7a5464bcb41"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Run Command on MID">b90ca31c47ce19903d45b18c346d4300</action_type>
+        <action_type_parent display_value="Run Command on MID">39632250474a19903d45b18c346d4301</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Update from Downdetector">3619d0f91bc9a51028f9b7a5464bcb34</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-16 17:27:13</sys_created_on>
+        <sys_id>3219d0f91bc9a51028f9b7a5464bcb41</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Execute Commands on Mid Server">59493655970a51d0b66fbd8c1253afba</sys_scope>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-16 18:34:31</sys_updated_on>
+        <ui_id>e4b0474e-a7d1-4d14-8db4-e0b247e3cab9</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=3219d0f91bc9a51028f9b7a5464bcb41"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>3219d0f91bc9a51028f9b7a5464bcb41</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-16 17:27:13</sys_created_on>
+        <sys_id>3219d0f91bc9a51028f9b7a5464bcb44</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-16 18:34:31</sys_updated_on>
+        <value>330</value>
+        <variable display_value="Execution Timeout">4cb61cbd974ad1d0b66fbd8c1253afca</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>3219d0f91bc9a51028f9b7a5464bcb41</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-16 17:27:13</sys_created_on>
+        <sys_id>3a19d0f91bc9a51028f9b7a5464bcb43</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-16 17:27:13</sys_updated_on>
+        <value>0c63cb4d1b05e11028f9b7a5464bcb45</value>
+        <variable display_value="Mid Server">b10ca31c47ce19903d45b18c346d4304</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>3219d0f91bc9a51028f9b7a5464bcb41</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-16 18:34:31</sys_created_on>
+        <sys_id>bc8828351b4da51028f9b7a5464bcb77</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-16 18:34:31</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Run asynchronously">bd0ca31c47ce19903d45b18c346d4310</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>3219d0f91bc9a51028f9b7a5464bcb41</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-16 17:27:13</sys_created_on>
+        <sys_id>f219d0f91bc9a51028f9b7a5464bcb44</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-16 18:34:31</sys_updated_on>
+        <value>timeout -k 1 300 /bin/bash -c "/home/ubuntu/run_dd.sh"</value>
+        <variable display_value="Command">350ca31c47ce19903d45b18c346d430c</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_b90ca31c47ce19903d45b18c346d4300^id=3219d0f91bc9a51028f9b7a5464bcb41"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=3219d0f91bc9a51028f9b7a5464bcb41^sys_idNOT INf08828351b4da51028f9b7a5464bcb77"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>run_asynchronously</input_name>
+        <instance>3219d0f91bc9a51028f9b7a5464bcb41</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"run_asynchronously":{"scriptActive":true,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value.\n**Available options display upon pressing \".\" after fd_data\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\n\nvar run_asynchronously \u003d \u0027false\u0027;\nreturn run_asynchronously;"}}</script>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-16 18:34:31</sys_created_on>
+        <sys_id>f08828351b4da51028f9b7a5464bcb77</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-16 18:34:31</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=3219d0f91bc9a51028f9b7a5464bcb41"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=3619d0f91bc9a51028f9b7a5464bcb34"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=3619d0f91bc9a51028f9b7a5464bcb34"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=3619d0f91bc9a51028f9b7a5464bcb34"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=3619d0f91bc9a51028f9b7a5464bcb34"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_3619d0f91bc9a51028f9b7a5464bcb34"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_3619d0f91bc9a51028f9b7a5464bcb34"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_3619d0f91bc9a51028f9b7a5464bcb34"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_3619d0f91bc9a51028f9b7a5464bcb34"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>b1f7dc391bc9a51028f9b7a5464bcbe8</sys_id>
+        <latest_snapshot>3619d0f91bc9a51028f9b7a5464bcb34</latest_snapshot>
+        <compiler_build>glide-tokyo-07-08-2022__patch4-11-23-2022_12-05-2022_2132.zip</compiler_build>
+    </sys_hub_flow>
+</record_update>
